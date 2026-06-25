@@ -1,74 +1,82 @@
 import requests
-import json
+import re
 
 
 class QuestionGenerator:
-    """
-    Uses a local Ollama model to generate interview questions from a job description.
-    """
+    accepted_types = {"behavioural", "situational", "motivational", "technical"}
 
-    def __init__(self, model: str = "llama3.2:3b", host: str = "http://localhost:11434"):
-        self.model = model
-        self.host = host
-        self.api_url = f"{host}/api/generate"
+    def __init__(self, model="llama3.2:3b", host="http://localhost:11434"):
+        self.llm_model = model
+        self.endpoint = f"{host}/api/generate"
 
-    def generate(self, job_description: str, num_questions: int = 3) -> list[str]:
-        """
-        Generates interview questions based on a job description.
-
-        Args:
-            job_description: The job description text.
-            num_questions: How many questions to generate.
-
-        Returns:
-            A list of question strings.
-        """
+    def generate(self, jd_text, num_questions=3):
         prompt = (
-            f"You are an expert interviewer. Based on the following job description, "
+            f"You are an expert interviewer. Based on the job description below, "
             f"generate exactly {num_questions} interview questions.\n\n"
+            f"Each question must be one of these types: Behavioural, Situational, Motivational, Technical.\n\n"
             f"Rules:\n"
-            f"- Output ONLY the questions, numbered 1 to {num_questions}.\n"
-            f"- No explanations, no headers, no extra text.\n"
-            f"- Each question on its own line.\n\n"
-            f"Job Description:\n{job_description}\n\n"
+            f"- Use a mix of question types across the {num_questions} questions.\n"
+            f"- Output ONLY in this exact format, nothing else:\n"
+            f"  1. [Type] Question text\n"
+            f"  2. [Type] Question text\n"
+            f"  3. [Type] Question text\n"
+            f"- No explanations, no headers, no extra text.\n\n"
+            f"Job Description:\n{jd_text}\n\n"
             f"Questions:"
         )
 
-        payload = {
-            "model": self.model,
+        body = {
+            "model": self.llm_model,
             "prompt": prompt,
             "stream": False,
         }
 
-        response = requests.post(self.api_url, json=payload, timeout=60)
-        response.raise_for_status()
+        res = requests.post(self.endpoint, json=body, timeout=60)
+        res.raise_for_status()
 
-        raw_text = response.json().get("response", "").strip()
-        return self._parse_questions(raw_text, num_questions)
+        raw = res.json().get("response", "").strip()
+        return self._extract_questions(raw, num_questions)
 
-    def _parse_questions(self, raw_text: str, num_questions: int) -> list[str]:
-        """
-        Parses numbered questions from the model's raw output.
-        """
-        lines = raw_text.splitlines()
-        questions = []
+    def _extract_questions(self, raw, limit):
+        found = []
+        bracketed = re.compile(r"^\d+[\.\)]\s*\[(\w+)\]\s*(.+)$", re.IGNORECASE)
+        unbracketed = re.compile(
+            r"^\d+[\.\)]\s*(behavioural|situational|motivational|technical)\s+(.+)$",
+            re.IGNORECASE
+        )
 
-        for line in lines:
-            line = line.strip()
-            if not line:
+        for row in raw.splitlines():
+            row = row.strip()
+            if not row:
                 continue
-            # Strip leading number and punctuation e.g. "1." "1)" "1:"
-            if line[0].isdigit():
-                # Remove the numbering prefix
-                for sep in [".", ")", ":"]:
-                    if sep in line[:3]:
-                        line = line.split(sep, 1)[-1].strip()
-                        break
-            if line:
-                questions.append(line)
 
-        # Fallback: if parsing produces nothing, return raw lines
-        if not questions:
-            questions = [l.strip() for l in lines if l.strip()]
+            hit = bracketed.match(row) or unbracketed.match(row)
+            if hit:
+                qtype = hit.group(1).strip().capitalize()
+                qtext = hit.group(2).strip()
+                if qtype.lower() not in self.accepted_types:
+                    qtype = "General"
+                found.append({"question": qtext, "type": qtype})
+            if len(found) >= limit:
+                break
 
-        return questions[:num_questions]
+        if not found:
+            for row in raw.splitlines():
+                row = row.strip()
+                if row and row[0].isdigit():
+                    for sep in [".", ")", ":"]:
+                        if sep in row[:3]:
+                            row = row.split(sep, 1)[-1].strip()
+                            break
+                    detected_type = "General"
+                    for t in self.accepted_types:
+                        if row.lower().startswith(t):
+                            detected_type = t.capitalize()
+                            row = row[len(t):].strip()
+                            break
+                    if row:
+                        found.append({"question": row, "type": detected_type})
+                if len(found) >= limit:
+                    break
+
+        return found[:limit]

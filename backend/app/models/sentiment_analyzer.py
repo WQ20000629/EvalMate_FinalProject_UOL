@@ -2,35 +2,32 @@ from transformers import pipeline
 
 
 class SentimentAnalyzer:
-    """
-    Uses a local Hugging Face model to analyze sentiment of a candidate's answer.
-    Returns a label (POSITIVE / NEGATIVE) and a confidence score.
-    """
+    tone_labels = {
+        "LABEL_0": "NEGATIVE",
+        "LABEL_1": "NEUTRAL",
+        "LABEL_2": "POSITIVE",
+        "negative": "NEGATIVE",
+        "neutral":  "NEUTRAL",
+        "positive": "POSITIVE",
+    }
 
-    def __init__(self, model: str = "distilbert-base-uncased-finetuned-sst-2-english"):
-        self.model_name = model
-        # Pipeline downloads and caches the model on first run
-        self._pipeline = pipeline("sentiment-analysis", model=model)
+    def __init__(self, model="cardiffnlp/twitter-roberta-base-sentiment-latest"):
+        self.hf_model = model
+        self.classifier = pipeline(
+            "sentiment-analysis",
+            model=model,
+            tokenizer=model,
+        )
 
-    def analyze(self, text: str) -> dict:
-        """
-        Analyzes the sentiment of the given text.
-
-        Args:
-            text: The transcribed answer text.
-
-        Returns:
-            A dict with keys:
-                - label (str):      "POSITIVE" or "NEGATIVE"
-                - confidence (float): 0.0 to 1.0
-        """
+    def analyze(self, text):
         if not text or not text.strip():
             return {"label": "NEUTRAL", "confidence": 0.0}
 
-        # Truncate to 512 tokens max (model limit)
-        result = self._pipeline(text[:512])[0]
+        output = self.classifier(text, truncation=True, max_length=512)[0]
+        raw = output["label"]
+        mapped = self.tone_labels.get(raw, raw.upper())
 
         return {
-            "label": result["label"],
-            "confidence": round(result["score"], 4),
+            "label": mapped,
+            "confidence": round(output["score"], 4),
         }

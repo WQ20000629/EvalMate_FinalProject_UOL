@@ -3,119 +3,116 @@ import re
 
 
 class Evaluator:
-    """
-    Uses a local Ollama model to evaluate a candidate's answer to an interview question.
-    Scores on relevance, content_depth, and clarity_structure (each 1-10),
-    with a detailed rationale for each dimension.
-    """
+    def __init__(self, model="llama3.2:3b", host="http://localhost:11434"):
+        self.llm_model = model
+        self.endpoint = f"{host}/api/generate"
 
-    def __init__(self, model: str = "llama3.2:3b", host: str = "http://localhost:11434"):
-        self.model = model
-        self.host = host
-        self.api_url = f"{host}/api/generate"
+    def evaluate(self, question, answer, question_type="General"):
+        is_behavioural = question_type.lower() == "behavioural"
 
-    def evaluate(self, question: str, answer: str) -> dict:
-        """
-        Evaluates a candidate's answer against the interview question.
+        star_note = ""
+        if is_behavioural:
+            star_note = (
+                f"\nIMPORTANT for Clarity Structure Score: This is a Behavioural question. "
+                f"You MUST evaluate whether the answer follows the STAR method "
+                f"(Situation, Task, Action, Result). "
+                f"If the answer does NOT follow STAR, rate Clarity Structure no higher than 4/10. "
+                f"The Clarity Structure Rationale MUST explicitly state which STAR components "
+                f"were present and which were missing.\n"
+            )
 
-        Args:
-            question: The interview question that was asked.
-            answer: The candidate's transcribed answer.
-
-        Returns:
-            A dict with keys:
-                - relevance (dict):        score (int), rationale (str)
-                - content_depth (dict):    score (int), rationale (str)
-                - clarity_structure (dict):score (int), rationale (str)
-                - overall_score (float):   average of the three scores
-        """
         prompt = (
             f"You are an expert interview evaluator.\n"
-            f"Evaluate the candidate's answer using THREE dimensions.\n\n"
+            f"Evaluate the candidate's answer using the dimensions below.\n\n"
+            f"For Confidence Delivery, focus on language use:\n"
+            f"- Low confidence: 'I think', 'maybe', 'probably', 'I'm not sure', 'kind of', 'I guess'\n"
+            f"- High confidence: 'I have', 'I did', 'I built', 'I led', definitive statements\n\n"
             f"Respond in EXACTLY this format, no extra text:\n\n"
             f"Relevance Score: <1-10>\n"
-            f"Relevance Rationale: <one or two sentences explaining the score>\n\n"
+            f"Relevance Rationale: <one or two sentences>\n\n"
             f"Content Depth Score: <1-10>\n"
-            f"Content Depth Rationale: <one or two sentences explaining the score>\n\n"
+            f"Content Depth Rationale: <one or two sentences>\n\n"
             f"Clarity Structure Score: <1-10>\n"
-            f"Clarity Structure Rationale: <one or two sentences explaining the score>\n\n"
-            f"---\n"
+            f"Clarity Structure Rationale: <one or two sentences>\n\n"
+            f"Confidence Delivery Score: <1-10>\n"
+            f"Confidence Delivery Rationale: <one or two sentences citing specific phrases>\n"
+            f"{star_note}"
+            f"\n---\n"
+            f"Question Type: {question_type}\n"
             f"Question: {question}\n"
             f"Answer: {answer}\n"
         )
 
-        payload = {
-            "model": self.model,
+        body = {
+            "model": self.llm_model,
             "prompt": prompt,
             "stream": False,
         }
 
-        response = requests.post(self.api_url, json=payload, timeout=60)
-        response.raise_for_status()
+        res = requests.post(self.endpoint, json=body, timeout=60)
+        res.raise_for_status()
 
-        raw_text = response.json().get("response", "").strip()
-        return self._parse_response(raw_text)
+        raw = res.json().get("response", "").strip()
+        return self._parse_scores(raw)
 
-    def _parse_response(self, raw_text: str) -> dict:
-        """
-        Parses the model output into structured evaluation dimensions.
-        Falls back gracefully if the format is unexpected.
-        """
-        result = {
-            "relevance":          {"score": None, "rationale": ""},
-            "content_depth":      {"score": None, "rationale": ""},
-            "clarity_structure":  {"score": None, "rationale": ""},
-            "overall_score":      None,
+    def _parse_scores(self, raw):
+        parsed = {
+            "relevance":           {"score": None, "rationale": ""},
+            "content_depth":       {"score": None, "rationale": ""},
+            "clarity_structure":   {"score": None, "rationale": ""},
+            "confidence_delivery": {"score": None, "rationale": ""},
+            "overall_score":       None,
         }
 
-        patterns = {
-            "relevance_score":             re.compile(r"Relevance Score:\s*(\d+)", re.IGNORECASE),
-            "relevance_rationale":         re.compile(r"Relevance Rationale:\s*(.+)", re.IGNORECASE),
-            "content_depth_score":         re.compile(r"Content Depth Score:\s*(\d+)", re.IGNORECASE),
-            "content_depth_rationale":     re.compile(r"Content Depth Rationale:\s*(.+)", re.IGNORECASE),
-            "clarity_structure_score":     re.compile(r"Clarity Structure Score:\s*(\d+)", re.IGNORECASE),
-            "clarity_structure_rationale": re.compile(r"Clarity Structure Rationale:\s*(.+)", re.IGNORECASE),
+        matchers = {
+            "rel_score":   re.compile(r"Relevance Score:\s*(\d+)", re.IGNORECASE),
+            "rel_reason":  re.compile(r"Relevance Rationale:\s*(.+)", re.IGNORECASE),
+            "dep_score":   re.compile(r"Content Depth Score:\s*(\d+)", re.IGNORECASE),
+            "dep_reason":  re.compile(r"Content Depth Rationale:\s*(.+)", re.IGNORECASE),
+            "clar_score":  re.compile(r"Clarity Structure Score:\s*(\d+)", re.IGNORECASE),
+            "clar_reason": re.compile(r"Clarity Structure Rationale:\s*(.+)", re.IGNORECASE),
+            "conf_score":  re.compile(r"Confidence Delivery Score:\s*(\d+)", re.IGNORECASE),
+            "conf_reason": re.compile(r"Confidence Delivery Rationale:\s*(.+)", re.IGNORECASE),
         }
 
-        for line in raw_text.splitlines():
-            line = line.strip()
-            if not line:
+        for row in raw.splitlines():
+            row = row.strip()
+            if not row:
                 continue
+            for tag, pattern in matchers.items():
+                hit = pattern.match(row)
+                if hit:
+                    val = hit.group(1).strip()
+                    if tag == "rel_score":
+                        parsed["relevance"]["score"] = max(1, min(10, int(val)))
+                    elif tag == "rel_reason":
+                        parsed["relevance"]["rationale"] = val
+                    elif tag == "dep_score":
+                        parsed["content_depth"]["score"] = max(1, min(10, int(val)))
+                    elif tag == "dep_reason":
+                        parsed["content_depth"]["rationale"] = val
+                    elif tag == "clar_score":
+                        parsed["clarity_structure"]["score"] = max(1, min(10, int(val)))
+                    elif tag == "clar_reason":
+                        parsed["clarity_structure"]["rationale"] = val
+                    elif tag == "conf_score":
+                        parsed["confidence_delivery"]["score"] = max(1, min(10, int(val)))
+                    elif tag == "conf_reason":
+                        parsed["confidence_delivery"]["rationale"] = val
 
-            for key, pattern in patterns.items():
-                match = pattern.match(line)
-                if match:
-                    value = match.group(1).strip()
-                    dimension, field = key.rsplit("_", 1) if "_score" not in key.replace("_score", "") else (key[:-6], "score")
-
-                    # Map key to result structure
-                    if key == "relevance_score":
-                        result["relevance"]["score"] = max(1, min(10, int(value)))
-                    elif key == "relevance_rationale":
-                        result["relevance"]["rationale"] = value
-                    elif key == "content_depth_score":
-                        result["content_depth"]["score"] = max(1, min(10, int(value)))
-                    elif key == "content_depth_rationale":
-                        result["content_depth"]["rationale"] = value
-                    elif key == "clarity_structure_score":
-                        result["clarity_structure"]["score"] = max(1, min(10, int(value)))
-                    elif key == "clarity_structure_rationale":
-                        result["clarity_structure"]["rationale"] = value
-
-        # Calculate overall score
-        scores = [
-            result["relevance"]["score"],
-            result["content_depth"]["score"],
-            result["clarity_structure"]["score"],
+        all_scores = [
+            parsed["relevance"]["score"],
+            parsed["content_depth"]["score"],
+            parsed["clarity_structure"]["score"],
+            parsed["confidence_delivery"]["score"],
         ]
-        valid_scores = [s for s in scores if s is not None]
-        if valid_scores:
-            result["overall_score"] = round(sum(valid_scores) / len(valid_scores), 1)
+        valid = [s for s in all_scores if s is not None]
+        if valid:
+            parsed["overall_score"] = round(sum(valid) / len(valid), 1)
 
-        # Fallback for any unparsed dimension
-        for dim in ["relevance", "content_depth", "clarity_structure"]:
-            if result[dim]["score"] is None:
-                result[dim]["score"] = 0
-                result[dim]["rationale"] = "Could not parse evaluation."
+        for dim in ["relevance", "content_depth", "clarity_structure", "confidence_delivery"]:
+            if parsed[dim]["score"] is None:
+                parsed[dim]["score"] = 0
+                parsed[dim]["rationale"] = "Could not parse evaluation."
 
-        return result
+        return parsed

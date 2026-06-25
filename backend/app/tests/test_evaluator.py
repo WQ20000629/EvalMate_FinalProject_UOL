@@ -30,7 +30,7 @@ def main():
 
     print("\n--- EVALUATION RESULT ---\n")
 
-    for dim in ["relevance", "content_depth", "clarity_structure"]:
+    for dim in ["relevance", "content_depth", "clarity_structure", "confidence_delivery"]:
         label = dim.replace("_", " ").title()
         print(f"{label}")
         print(f"  Score:     {result[dim]['score']}/10")
@@ -38,6 +38,7 @@ def main():
         print()
 
     print(f"Overall Score: {result['overall_score']}/10")
+
 
 if __name__ == "__main__":
     main()

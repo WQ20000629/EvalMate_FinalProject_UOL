@@ -2,12 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import router
 
-app = FastAPI(
-    title="AI Interview Evaluator API",
-    version="1.0.0",
-)
+app = FastAPI(title="AI Interview Evaluator", version="1.0.0")
 
-# Allow frontend (running on file:// or localhost) to call the API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -19,5 +15,5 @@ app.include_router(router, prefix="/api")
 
 
 @app.get("/")
-def health_check():
+def ping():
     return {"status": "ok"}
