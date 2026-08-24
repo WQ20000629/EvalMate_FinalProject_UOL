@@ -1,0 +1,82 @@
+[
+  {
+    "clip_id": "clip01_normal",
+    "audio_file": "clip01_normal.m4a",
+    "condition": "normal",
+    "length": "short",
+    "whisper_transcript": "We saw the hours coordinating several projects on developing deadlines. One challenge was ensuring that the members have information that neither we don't create the confusion true to many updates. Just by creating a shared track record that clearly outlined responsibility, pipelines and key monsters. We also have shortly checked in to identify issues early, and so we thought the projects were lanz ourselves.",
+    "transcribe_seconds": 5.08
+  },
+  {
+    "clip_id": "clip02_normal",
+    "audio_file": "clip02_normal.m4a",
+    "condition": "normal",
+    "length": "short",
+    "whisper_transcript": "I am interested in this position because your lines were above my experience and my long-term career goals. I enjoy solving problems, working with the first stakeholders, and finding ways to improve processes. For what understand about the role of first opportunities to contribute with meaningful work, while continuing to develop professionally. I also appreciate organizations that encourage collaboration and continuous learning which help to13 use of run\u8a66",
+    "transcribe_seconds": 4.58
+  },
+  {
+    "clip_id": "clip03_filler",
+    "audio_file": "clip03_filler.m4a",
+    "condition": "filler",
+    "length": "long",
+    "whisper_transcript": "I think one example would be when I had to learn a new report, this is the web work. I had no really used anything similar before, so at first I was a little unsure where to start. I guess I spent like the first few days watching to borrow and asking colleagues questions. Then I started using it for smaller tasks before moving on to more complicated reports. It was a perfect beginning, but eventually I became more comfortable enough to reuse it in the company.",
+    "transcribe_seconds": 2.27
+  },
+  {
+    "clip_id": "clip04_filler",
+    "audio_file": "clip04_filler.m4a",
+    "condition": "filler",
+    "length": "long",
+    "whisper_transcript": "I think they would probably say that I rely a bird like if. Sometimes something this to be done, they know our fellow true. I guess they also mentioned communication because I tried to keep and read updated. Sometimes projects get a little messy and a people and a richer, what's going on. So I tried to calculate five things. I mean that's probably what they would say, although you have to ask them to be sure.",
+    "transcribe_seconds": 2.22
+  },
+  {
+    "clip_id": "clip05_fast",
+    "audio_file": "clip05_fast.m4a",
+    "condition": "fast",
+    "length": "short",
+    "whisper_transcript": "One project I am proud of involve coordinating several deep armrests with launch new interliprocessors and although there were a lot of moving parts you managed to keep everything on track by having frequent checkings, documenting decisions and responding quickly when the road issues came up, we shall ask me the line and achieve or take these to have been set at the beginning of the project.",
+    "transcribe_seconds": 1.55
+  },
+  {
+    "clip_id": "clip06_fast",
+    "audio_file": "clip06_fast.m4a",
+    "condition": "fast",
+    "length": "short",
+    "whisper_transcript": "When I have multiple data as I adjust it by identifying each task on the most urgent and reach head the more because the impact. And I bring everything into smaller actions and estimate how long each item will take and erase their order while continuously reviewing about this trial the week. Because then request and come in on the other aspect of the DNA I want to make sure important work is not delayed.",
+    "transcribe_seconds": 1.65
+  },
+  {
+    "clip_id": "clip07_short",
+    "audio_file": "clip07_short.m4a",
+    "condition": "normal",
+    "length": "short",
+    "whisper_transcript": "What motivates me more is seeing tangible results from my efforts. I enjoy solving problems, improving processes and knowing that my work has a positive impact on the team organization. Continuous learning and opportunities for growth are also strong with the business for me.",
+    "transcribe_seconds": 1.17
+  },
+  {
+    "clip_id": "clip08_long",
+    "audio_file": "clip08_long.m4a",
+    "condition": "normal",
+    "length": "long",
+    "whisper_transcript": "In the previous rule, I noticed our team's fan significant amount of time manually compiling information from multiple sources into weekly reports. The process was rapid that each time consuming and occasionally let whoever's been cost information had to be copied and checked several times before the report could be finalized. I began by observing how different team members completed the task and documenting each study report. After identifying the boss kind of time consuming areas, I published reading a standard of 4-day credit and alerts. Automated data are collected with possible and clearer as possible at least for the first in-jors or the reporting processes. To implement the change, I covered the view, colleagues to test the new workflow on the smaller scale before rolling it out to the entire team. The wind up file pilot is, began a few bad and made adjustment based on the technical challenge just a image. The final process, with this manual effort, improved consistency, or conscious pulse and a lot of team members to spend more time analyzing information rather than getting it. Beyond the efficiency gain, the project also highlighted the value of continuous improvement and should a lot more of the machine just can create meaningful benefits over time.",
+    "transcribe_seconds": 5.5
+  },
+  {
+    "clip_id": "clip09_slowSoft",
+    "audio_file": "clip09_slowSoft.m4a",
+    "condition": "slowSoft",
+    "length": "long",
+    "whisper_transcript": "I once worked with a colleague who had a very different approach to planning a project initially with this grid on how detailed the time I should be. Instead of focusing on our differences with this class, I wanted to say this advantageous of each approach and look at the previous examples. Through this conversation, we developed a solution that combined the strongest aspect of both ideas, the experience we have for us, the importance of listening and remaining component.",
+    "transcribe_seconds": 2.2
+  },
+  {
+    "clip_id": "clip10_slowSoft",
+    "audio_file": "clip10_slowSoft.m4a",
+    "condition": "slowSoft",
+    "length": "short",
+    "whisper_transcript": "I suspect that changes are common in many web environments. So I tried to remain flexible and focus on what can be controlled, where by this shift, I first accessed all the changes in text, current, pass and daylight. I think community can be relevant in orders and adjust plans accordingly. Still, I organized and maintaining clear communication, helps reduce the distortion, and then it's just the important object is continued to move forward.",
+    "transcribe_seconds": 1.81
+  }
+]

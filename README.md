@@ -23,13 +23,8 @@ pip install -r requirements.txt
 
 You need **3 terminals** running simultaneously.
 
-### Terminal 1 — Ollama
 
-```
-ollama serve
-```
-
-### Terminal 2 — Backend (from the `backend` folder)
+### Terminal 1 — Backend (from the `backend` folder)
 
 ```
 cd backend
@@ -39,7 +34,7 @@ uvicorn app.main:app --reload
 Backend runs at: `http://localhost:8000`  
 API docs available at: `http://localhost:8000/docs`
 
-### Terminal 3 — Frontend (from the `frontend` folder)
+### Terminal 2 — Frontend (from the `frontend` folder)
 
 ```
 cd frontend

@@ -5,7 +5,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 from app.core.pipeline import InterviewPipeline
 
-
 def get_multiline_input(prompt: str) -> str:
     print(prompt)
     print("(Type END on a new line when done)\n")

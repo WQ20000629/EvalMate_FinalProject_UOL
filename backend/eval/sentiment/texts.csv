@@ -1,0 +1,16 @@
+text_id,transcript,human_sentiment
+pos01,"One of my biggest achievements was leading a project that improved our reporting process. By working closely with the team and introducing a few automation tools, we reduced manual effort significantly and received positive feedback from stakeholders.",positive
+pos02,"I really enjoyed collaborating with my colleagues on a challenging assignment. Everyone contributed different ideas, and together we delivered a result that exceeded expectations and strengthened our teamwork.",positive
+pos03,"This role allowed me to learn new skills and take on greater responsibility. I was excited by the opportunity to contribute to meaningful projects and felt proud of the impact my work had on the organization.",positive
+pos04,"When faced with a difficult deadline, I stayed organized and communicated regularly with the team. We completed the work on time, and the experience gave me more confidence in handling high-pressure situations.",positive
+pos05,"I am highly motivated by opportunities to learn and grow. Receiving recognition from my manager for my contributions was rewarding and encouraged me to continue improving my performance.",positive
+neu01,"In my previous role, I was responsible for preparing weekly reports, attending team meetings, and coordinating with stakeholders to ensure project updates were communicated accurately.",neutral
+neu02,"A typical workday involved reviewing incoming requests, prioritizing tasks based on deadlines, and updating project trackers. The workload varied depending on the phase of the project.",neutral
+neu03,"I have experience using several software tools for data analysis and reporting. The specific tools depended on the requirements of the project and the preferences of the client.",neutral
+neu04,"When starting a new project, I usually begin by gathering information, understanding stakeholder expectations, and developing a plan that outlines key milestones and deliverables.",neutral
+neu05,"My team consisted of people from different departments, and we met regularly to discuss progress, share updates, and address any issues that arose during the project lifecycle.",neutral
+neg01,"One challenge I faced was working on a project with limited resources and unclear requirements. This created delays and made it difficult to meet expectations despite our efforts.",negative
+neg02,"I was disappointed when a project I worked on did not achieve its intended objectives. Several unexpected issues emerged during implementation, which affected the final outcome.",negative
+neg03,"There was a period when I felt overwhelmed by competing priorities and tight deadlines. Managing multiple urgent requests at the same time was stressful and impacted productivity.",negative
+neg04,"Communication problems within the team led to misunderstandings and duplicated work. As a result, we had to spend additional time correcting mistakes and realigning our plans.",negative
+neg05,"One of the most difficult experiences in my career involved receiving critical feedback after a project encountered significant setbacks. Although it was frustrating at the time, it highlighted areas that needed improvement.",negative

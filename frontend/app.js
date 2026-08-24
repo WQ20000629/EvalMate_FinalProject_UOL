@@ -1,5 +1,10 @@
+// Base URL for all backend API calls
 const serverBase = "http://localhost:8000/api";
 
+
+/**
+ * Convert backend sentiment labels into display text for the UI.
+ */
 function toneLabel(raw) {
   const toneMap = {
     POSITIVE: "Positive tone",
@@ -9,13 +14,16 @@ function toneLabel(raw) {
   return toneMap[raw] || raw;
 }
 
+// Interview session state
 let questionBank = [];
 let questionIndex = 0;
 let sessionResults = [];
 let recorder = null;
 let audioBuffer = [];
 let recordingActive = false;
+let hasRecording = false;
 
+// Eye contact tracking state
 let gazeOk = 0;
 let gazeTotal = 0;
 let gazeRunning = false;
@@ -24,6 +32,7 @@ let camStream = null;
 let mpCamLoop = null;
 let mpFace = null;
 
+// Cache commonly used DOM elements for performance
 const pageScreens = {
   jd:        document.getElementById("screen-jd"),
   interview: document.getElementById("screen-interview"),
@@ -35,32 +44,52 @@ const camFeed     = document.getElementById("cam-feed");
 const camWrap     = document.getElementById("cam-wrap");
 const gazeBadge   = document.getElementById("gaze-badge");
 
+/**
+ * Show one screen and hide the others.
+ */
 function switchScreen(name) {
   Object.values(pageScreens).forEach(s => s.classList.add("hidden"));
   pageScreens[name].classList.remove("hidden");
 }
+
+/**
+ * Show the loading overlay with a custom message.
+ */
 
 function showSpinner(msg = "Processing...") {
   loadText.textContent = msg;
   loadOverlay.classList.remove("hidden");
 }
 
+/**
+ * Hide the loading overlay.
+ */
 function hideSpinner() {
   loadOverlay.classList.add("hidden");
 }
 
+/**
+ * Display an error message in a specified element.
+ */
 function displayError(elId, msg) {
   const el = document.getElementById(elId);
   el.textContent = msg;
   el.classList.remove("hidden");
 }
 
+/**
+ * Clear an error message from a specified element.
+ */
 function clearError(elId) {
   const el = document.getElementById(elId);
   el.textContent = "";
   el.classList.add("hidden");
 }
 
+/**
+ * Send a POST request to the backend.
+ * A timeout is used so the UI does not hang indefinitely.
+ */
 async function postRequest(path, payload, multipart = false) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 120000);
@@ -86,6 +115,10 @@ async function postRequest(path, payload, multipart = false) {
   }
 }
 
+/**
+ * Calculate horizontal iris position ratio between two eye corner landmarks.
+ * Returns a value from roughly 0 to 1.
+ */
 function hRatio(a, b, iris) {
   const lo = Math.min(a.x, b.x);
   const hi = Math.max(a.x, b.x);
@@ -94,6 +127,10 @@ function hRatio(a, b, iris) {
   return (iris.x - lo) / w;
 }
 
+/**
+ * Calculate vertical iris position ratio between upper and lower eyelid landmarks.
+ * Returns a value from roughly 0 to 1.
+ */
 function vRatio(top, bot, iris) {
   const lo = Math.min(top.y, bot.y);
   const hi = Math.max(top.y, bot.y);
@@ -102,10 +139,15 @@ function vRatio(top, bot, iris) {
   return (iris.y - lo) / h;
 }
 
+/**
+ * Callback run every time MediaPipe returns face landmarks.
+ * It checks whether the user appears to be looking toward the camera.
+ */
 function onFaceFrame(data) {
   if (!gazeRunning) return;
   gazeTotal++;
 
+  // No face detected in this frame
   if (!data.multiFaceLandmarks || data.multiFaceLandmarks.length === 0) {
     setBadge(false);
     return;
@@ -113,6 +155,7 @@ function onFaceFrame(data) {
 
   const lm = data.multiFaceLandmarks[0];
 
+  // If iris landmarks are missing, treat as acceptable fallback
   if (lm.length < 474) {
     gazeOk++;
     setBadge(true);
@@ -135,6 +178,10 @@ function onFaceFrame(data) {
   }
 }
 
+
+/**
+ * Update the on-screen eye contact badge.
+ */
 function setBadge(looking) {
   if (looking) {
     gazeBadge.textContent = "👁 Eye contact ✓";
@@ -145,6 +192,10 @@ function setBadge(looking) {
   }
 }
 
+
+/**
+ * Start webcam capture and begin MediaPipe eye contact tracking.
+ */
 async function startGaze() {
   gazeOk = 0;
   gazeTotal = 0;
@@ -174,6 +225,10 @@ async function startGaze() {
   }
 }
 
+
+/**
+ * Stop eye contact tracking and compute the final eye contact score.
+ */
 function stopGaze() {
   gazeRunning = false;
 
@@ -191,6 +246,10 @@ function stopGaze() {
   gazeBadge.style.background = "rgba(0,0,0,0.7)";
 }
 
+
+/**
+ * Initialise MediaPipe FaceMesh for browser-based face landmark detection.
+ */
 function initFaceDetector() {
   mpFace = new FaceMesh({
     locateFile: f => `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${f}`
@@ -204,14 +263,26 @@ function initFaceDetector() {
   mpFace.onResults(onFaceFrame);
 }
 
+
+/**
+ * Generate interview questions from the pasted job description.
+ */
 document.getElementById("btn-generate").addEventListener("click", async () => {
   clearError("jd-error");
   const jdText = document.getElementById("jd-input").value.trim();
   if (!jdText) { displayError("jd-error", "Please paste a job description."); return; }
 
+  const numQuestions = parseInt(document.getElementById("num-questions").value, 10);
+  const selectedTypes = Array.from(document.querySelectorAll(".type-checkboxes input:checked")).map(el => el.value);
+  if (selectedTypes.length === 0) { displayError("jd-error", "Select at least one question type."); return; }
+
   showSpinner("Generating questions...");
   try {
-    const resp = await postRequest("/generate-questions", { job_description: jdText });
+    const resp = await postRequest("/generate-questions", {
+      job_description: jdText,
+      num_questions: numQuestions,
+      question_types: selectedTypes,
+    });
     questionBank = resp.questions;
     questionIndex = 0;
     sessionResults = [];
@@ -224,6 +295,11 @@ document.getElementById("btn-generate").addEventListener("click", async () => {
   }
 });
 
+
+/**
+ * Load the current interview question into the UI.
+ * Also resets previous transcript and recording state.
+ */
 function loadNextQuestion() {
   const current = questionBank[questionIndex];
   document.getElementById("question-counter").textContent = `Question ${questionIndex + 1} of ${questionBank.length}`;
@@ -245,6 +321,10 @@ function loadNextQuestion() {
   resetAudio();
 }
 
+
+/**
+ * Toggle recording on/off when the record button is clicked.
+ */
 document.getElementById("btn-record").addEventListener("click", async () => {
   if (recordingActive) {
     stopAudio();
@@ -253,6 +333,10 @@ document.getElementById("btn-record").addEventListener("click", async () => {
   }
 });
 
+
+/**
+ * Start microphone recording and eye contact tracking together.
+ */
 async function startAudio() {
   try {
     const micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -262,6 +346,9 @@ async function startAudio() {
     recorder.onstop = onAudioDone;
     recorder.start();
     recordingActive = true;
+
+    document.getElementById("transcript-box").classList.add("hidden");
+    document.getElementById("btn-submit-answer").classList.add("hidden");
 
     const btn = document.getElementById("btn-record");
     btn.textContent = "⏹ Stop Recording";
@@ -274,6 +361,10 @@ async function startAudio() {
   }
 }
 
+
+/**
+ * Stop the audio recorder and stop eye contact tracking.
+ */
 function stopAudio() {
   if (recorder && recorder.state !== "inactive") {
     recorder.stop();
@@ -282,23 +373,33 @@ function stopAudio() {
   recordingActive = false;
 
   const btn = document.getElementById("btn-record");
-  btn.textContent = "🎤 Start Recording";
+  btn.textContent = hasRecording ? "🔁 Re-record" : "🎤 Start Recording";
   btn.classList.remove("recording");
   document.getElementById("record-status").textContent = "Processing...";
 
   stopGaze();
 }
 
+
+/**
+ * Reset recording-related UI and state before the next question.
+ */
 function resetAudio() {
   recordingActive = false;
   audioBuffer = [];
   gazeScore = null;
+  hasRecording = false;
   const btn = document.getElementById("btn-record");
   btn.textContent = "🎤 Start Recording";
   btn.classList.remove("recording");
   document.getElementById("record-status").textContent = "";
 }
 
+
+/**
+ * Called after recording stops.
+ * Sends the recorded audio to the backend for transcription.
+ */
 async function onAudioDone() {
   document.getElementById("record-status").textContent = "Transcribing...";
 
@@ -321,12 +422,20 @@ async function onAudioDone() {
     document.getElementById("btn-submit-answer").classList.remove("hidden");
     document.getElementById("record-status").textContent = "Done.";
     document.getElementById("btn-submit-answer").dataset.transcript = text;
+
+    hasRecording = true;
+    document.getElementById("btn-record").textContent = "🔁 Re-record";
   } catch (e) {
     displayError("interview-error", `Transcription failed: ${e.message}`);
     document.getElementById("record-status").textContent = "";
   }
 }
 
+
+/**
+ * Submit the current answer for evaluation and sentiment analysis.
+ * Eye contact score is included with the result for final aggregation.
+ */
 document.getElementById("btn-submit-answer").addEventListener("click", async () => {
   clearError("interview-error");
   const transcript = document.getElementById("btn-submit-answer").dataset.transcript;
@@ -363,12 +472,18 @@ document.getElementById("btn-submit-answer").addEventListener("click", async () 
   }
 });
 
+
+/**
+ * Request the final aggregated report from the backend.
+ * Falls back to frontend aggregation if backend report generation fails.
+ */
 async function buildReport() {
   showSpinner("Generating final report...");
   try {
     const summary = await postRequest("/final-report", { results: sessionResults });
     summary.per_question = sessionResults;
     summary.avg_eye_contact = avgGaze(sessionResults);
+    summary.avg_sentiment_score = summary.avg_sentiment_score ?? calcAvgSentiment(sessionResults);
     drawReport(summary);
     switchScreen("report");
   } catch (e) {
@@ -380,17 +495,38 @@ async function buildReport() {
   }
 }
 
+/**
+ * Compute average sentiment score across all answered questions.
+ */
+function calcAvgSentiment(data) {
+  const scores = data.map(r => sentimentToScore(r.sentiment.label, r.sentiment.confidence));
+  if (!scores.length) return null;
+  return Math.round((scores.reduce((a, b) => a + b, 0) / scores.length) * 10) / 10;
+}
+
+/**
+ * Compute average eye contact score across all answered questions.
+ */
 function avgGaze(data) {
   const valid = data.map(r => r.eye_contact_score).filter(s => s !== null && s !== undefined);
   if (!valid.length) return null;
   return Math.round((valid.reduce((a, b) => a + b, 0) / valid.length) * 10) / 10;
 }
 
+
+/**
+ * Convert sentiment label and confidence into a score out of 10.
+ */
 function sentimentToScore(label, confidence) {
   const base = { POSITIVE: 10, NEUTRAL: 5, NEGATIVE: 0 };
   return Math.round((base[label] ?? 5) * confidence * 10) / 10;
 }
 
+
+/**
+ * Frontend fallback aggregation used only if backend final-report fails.
+ * Recomputes averages and weighted final score locally.
+ */
 function fallbackAggregate(data) {
   const keys = ["relevance", "content_depth", "clarity_structure", "confidence_delivery"];
   const sums = Object.fromEntries(keys.map(k => [k, 0]));
@@ -422,6 +558,7 @@ function fallbackAggregate(data) {
     avg_content_depth:       +(sums.content_depth / n).toFixed(1),
     avg_clarity_structure:   +(sums.clarity_structure / n).toFixed(1),
     avg_confidence_delivery: +(sums.confidence_delivery / n).toFixed(1),
+    avg_sentiment_score:     calcAvgSentiment(data),
     avg_eye_contact:         avgGaze(data),
     final_overall_score:     +(weightedTotal / n).toFixed(1),
     dominant_sentiment: tones.sort((a, b) =>
@@ -430,6 +567,11 @@ function fallbackAggregate(data) {
   };
 }
 
+
+/**
+ * Escape text before inserting it into innerHTML.
+ * This prevents HTML from being interpreted directly.
+ */
 function escapeHtml(str) {
   return str
     .replace(/&/g, "&amp;")
@@ -438,10 +580,17 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;");
 }
 
+/**
+ * Format eye contact score for display.
+ */
 function fmtEye(val) {
   return (val === null || val === undefined) ? "N/A" : `${val}/10`;
 }
 
+/**
+ * Render the final report screen, including summary scores
+ * and detailed results for each interview question.
+ */
 function drawReport(data) {
   const eyeAvg = data.avg_eye_contact;
 
@@ -490,15 +639,25 @@ function drawReport(data) {
         <p class="transcript-preview">"${escapeHtml(item.transcript)}"</p>
         ${dimRows}
         <div class="result-footer">
-          <span class="sentiment-tag ${se.label}">${toneLabel(se.label)}</span>
-          <span class="eye-score-tag">👁 Eye Contact: ${fmtEye(item.eye_contact_score)}</span>
-          <strong class="overall-score">${ev.overall_score}/10</strong>
+          <div class="tone-row">
+            <span class="sentiment-tag ${se.label}">${toneLabel(se.label)}</span>
+            <strong class="overall-score">Overall: ${ev.overall_score}/10</strong>
+          </div>
+          <div class="sentiment-score-row">
+            <span class="eye-score-tag">Sentiment: ${sentimentToScore(se.label, se.confidence)}/10</span>
+          </div>
+          <div class="eye-contact-row">
+            <span class="eye-score-tag">👁 Eye Contact: ${fmtEye(item.eye_contact_score)}</span>
+          </div>
         </div>
       </div>
     `;
   });
 }
 
+/**
+ * Reset the whole session and return the user to the JD input screen.
+ */
 document.getElementById("btn-restart").addEventListener("click", () => {
   questionBank = [];
   questionIndex = 0;
@@ -509,4 +668,5 @@ document.getElementById("btn-restart").addEventListener("click", () => {
   switchScreen("jd");
 });
 
+// Initialise MediaPipe FaceMesh when the page loads
 initFaceDetector();

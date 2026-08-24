@@ -1,0 +1,76 @@
+{
+  "model_size": "tiny",
+  "overall_avg_wer": 0.405,
+  "per_clip": [
+    {
+      "clip_id": "clip01_normal",
+      "condition": "normal",
+      "length": "short",
+      "wer": 0.643,
+      "transcribe_seconds": 5.08
+    },
+    {
+      "clip_id": "clip02_normal",
+      "condition": "normal",
+      "length": "short",
+      "wer": 0.343,
+      "transcribe_seconds": 4.58
+    },
+    {
+      "clip_id": "clip03_filler",
+      "condition": "filler",
+      "length": "long",
+      "wer": 0.256,
+      "transcribe_seconds": 2.27
+    },
+    {
+      "clip_id": "clip04_filler",
+      "condition": "filler",
+      "length": "long",
+      "wer": 0.366,
+      "transcribe_seconds": 2.22
+    },
+    {
+      "clip_id": "clip05_fast",
+      "condition": "fast",
+      "length": "short",
+      "wer": 0.354,
+      "transcribe_seconds": 1.55
+    },
+    {
+      "clip_id": "clip06_fast",
+      "condition": "fast",
+      "length": "short",
+      "wer": 0.523,
+      "transcribe_seconds": 1.65
+    },
+    {
+      "clip_id": "clip07_short",
+      "condition": "normal",
+      "length": "short",
+      "wer": 0.14,
+      "transcribe_seconds": 1.17
+    },
+    {
+      "clip_id": "clip08_long",
+      "condition": "normal",
+      "length": "long",
+      "wer": 0.446,
+      "transcribe_seconds": 5.5
+    },
+    {
+      "clip_id": "clip09_slowSoft",
+      "condition": "slowSoft",
+      "length": "long",
+      "wer": 0.394,
+      "transcribe_seconds": 2.2
+    },
+    {
+      "clip_id": "clip10_slowSoft",
+      "condition": "slowSoft",
+      "length": "short",
+      "wer": 0.587,
+      "transcribe_seconds": 1.81
+    }
+  ]
+}

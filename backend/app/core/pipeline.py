@@ -42,7 +42,7 @@ class InterviewPipeline:
     - sentiment analysis
     - final score aggregation
     """
-    def __init__(self, ollama_model="llama3.2:3b", whisper_size="base", ollama_host="http://localhost:11434"):
+    def __init__(self, ollama_model="llama3.2:3b", whisper_size="small", ollama_host="http://localhost:11434"):
         """
         Initialise all model components used by the system.
         Parameters:
@@ -56,16 +56,17 @@ class InterviewPipeline:
         self.tone_analyzer = SentimentAnalyzer()
 
 
-    def generate_questions(self, jd_text, total=3):
+    def generate_questions(self, jd_text, total=3, types=None):
         """
         Generate interview questions from a job description.
         Parameters:
         - jd_text: job description text
         - total: number of questions to generate
+        - types: optional list of question types to restrict generation to
         Returns:
         - list of generated questions
         """
-        return self.question_gen.generate(jd_text, num_questions=total)
+        return self.question_gen.generate(jd_text, num_questions=total, allowed_types=types)
 
     def transcribe(self, audio_file):
         """
@@ -147,6 +148,7 @@ class InterviewPipeline:
         running_totals = {k: 0 for k in score_keys}
         running_sentiment_score = 0
         running_weighted = 0
+        running_eye_score = 0
         tone_list = []
         eye_count = 0
 

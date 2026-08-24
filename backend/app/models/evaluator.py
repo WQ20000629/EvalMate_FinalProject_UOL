@@ -1,13 +1,31 @@
+# Import necessary libraries
 import requests
 import re
 
-
 class Evaluator:
+    """
+    Handles answer evaluation by sending the interview question and candidate response
+    to the Ollama model, then parsing the returned scores and rationales into a
+    structured format.
+    """
     def __init__(self, model="llama3.2:3b", host="http://localhost:11434"):
+        """
+        Initialise the evaluator with the Ollama model name and host URL.
+        """
         self.llm_model = model
         self.endpoint = f"{host}/api/generate"
 
     def evaluate(self, question, answer, question_type="General"):
+        """
+        Evaluate a candidate's answer across multiple interview dimensions.
+        For behavioural questions, extra instructions are added so that
+        clarity and structure are judged based on the STAR method.
+        Returns:
+            dict: Parsed evaluation results containing scores and rationales
+                  for relevance, content depth, clarity structure, confidence delivery,
+                  and overall score.
+
+        """
         is_behavioural = question_type.lower() == "behavioural"
 
         star_note = ""
@@ -56,6 +74,13 @@ class Evaluator:
         return self._parse_scores(raw)
 
     def _parse_scores(self, raw):
+        """
+        Extract scores and rationales from the raw text returned by the model.
+        Returns:
+            dict: Structured evaluation result with dimension scores, rationales,
+                  and an automatically calculated overall score.
+        """
+
         parsed = {
             "relevance":           {"score": None, "rationale": ""},
             "content_depth":       {"score": None, "rationale": ""},

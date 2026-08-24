@@ -1,0 +1,92 @@
+[
+  {
+    "text_id": "pos01",
+    "human_sentiment": "POSITIVE",
+    "predicted_label": "POSITIVE",
+    "confidence": 0.9817
+  },
+  {
+    "text_id": "pos02",
+    "human_sentiment": "POSITIVE",
+    "predicted_label": "POSITIVE",
+    "confidence": 0.9845
+  },
+  {
+    "text_id": "pos03",
+    "human_sentiment": "POSITIVE",
+    "predicted_label": "POSITIVE",
+    "confidence": 0.9828
+  },
+  {
+    "text_id": "pos04",
+    "human_sentiment": "POSITIVE",
+    "predicted_label": "POSITIVE",
+    "confidence": 0.8973
+  },
+  {
+    "text_id": "pos05",
+    "human_sentiment": "POSITIVE",
+    "predicted_label": "POSITIVE",
+    "confidence": 0.9853
+  },
+  {
+    "text_id": "neu01",
+    "human_sentiment": "NEUTRAL",
+    "predicted_label": "NEUTRAL",
+    "confidence": 0.8075
+  },
+  {
+    "text_id": "neu02",
+    "human_sentiment": "NEUTRAL",
+    "predicted_label": "NEUTRAL",
+    "confidence": 0.888
+  },
+  {
+    "text_id": "neu03",
+    "human_sentiment": "NEUTRAL",
+    "predicted_label": "NEUTRAL",
+    "confidence": 0.7471
+  },
+  {
+    "text_id": "neu04",
+    "human_sentiment": "NEUTRAL",
+    "predicted_label": "NEUTRAL",
+    "confidence": 0.733
+  },
+  {
+    "text_id": "neu05",
+    "human_sentiment": "NEUTRAL",
+    "predicted_label": "NEUTRAL",
+    "confidence": 0.7157
+  },
+  {
+    "text_id": "neg01",
+    "human_sentiment": "NEGATIVE",
+    "predicted_label": "NEGATIVE",
+    "confidence": 0.8231
+  },
+  {
+    "text_id": "neg02",
+    "human_sentiment": "NEGATIVE",
+    "predicted_label": "NEGATIVE",
+    "confidence": 0.9086
+  },
+  {
+    "text_id": "neg03",
+    "human_sentiment": "NEGATIVE",
+    "predicted_label": "NEGATIVE",
+    "confidence": 0.6753
+  },
+  {
+    "text_id": "neg04",
+    "human_sentiment": "NEGATIVE",
+    "predicted_label": "NEGATIVE",
+    "confidence": 0.7897
+  },
+  {
+    "text_id": "neg05",
+    "human_sentiment": "NEGATIVE",
+    "predicted_label": "NEGATIVE",
+    "confidence": 0.7788
+  }
+]

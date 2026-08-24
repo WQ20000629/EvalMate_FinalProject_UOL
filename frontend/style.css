@@ -52,6 +52,58 @@ textarea {
   margin-bottom: 12px;
 }
 
+/* Box grouping the pre-interview settings (question count + types) */
+.settings-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* One row inside the settings box (label + control) */
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.settings-row + .settings-row {
+  margin-top: 14px;
+}
+
+.settings-row > label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Number-of-questions dropdown */
+#num-questions {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+/* Question type checkbox group */
+.type-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.type-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #444;
+}
+
 /* General button styling */
 button {
   padding: 10px 20px;
@@ -148,15 +200,25 @@ button:disabled { background: #999; cursor: not-allowed; }
 /* Footer section inside each question result card */
 .result-footer {
   display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tone-row,
+.sentiment-score-row,
+.eye-contact-row {
+  display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-  flex-wrap: wrap;
+}
+
+.tone-row {
+  justify-content: space-between;
 }
 
 /* Push overall score to the far right */
 .overall-score {
-  margin-left: auto;
+  font-size: 0.95rem;
 }
 
 /* Eye contact score tag */

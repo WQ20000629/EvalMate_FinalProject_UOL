@@ -1,0 +1,82 @@
+[
+  {
+    "clip_id": "clip01_normal",
+    "audio_file": "clip01_normal.m4a",
+    "condition": "normal",
+    "length": "short",
+    "whisper_transcript": "Recently, I was coordinating several projects with overlapping deadlines. One challenge was ensuring that team members have information they needed without creating confusion through too many updates. Adjust this by creating a shared track that clearly outlines responsibilities, timelines and key milestones. We also held short weekly check-ins to identify issues early, as a result the projects were computer on schedule and communication across the team improve significantly.",
+    "transcribe_seconds": 5.15
+  },
+  {
+    "clip_id": "clip02_normal",
+    "audio_file": "clip02_normal.m4a",
+    "condition": "normal",
+    "length": "short",
+    "whisper_transcript": "I have interested in this position because it aligns well with both my experience and my long-term career goals. I enjoy solving problems, working with the first stakeholders and finding ways to improve processes. For what I understand about the role it offers opportunities to contribute meaningfully while continuing to develop professionally. I also appreciate organizations that encourage collaboration and continuous learning, which are qualities that attracted me to this opportunity.",
+    "transcribe_seconds": 3.22
+  },
+  {
+    "clip_id": "clip03_filler",
+    "audio_file": "clip03_filler.m4a",
+    "condition": "filler",
+    "length": "long",
+    "whisper_transcript": "I think one example would be when I had to learn a new reporting system at work. I hadn't really used anything similar before, so at first I was a little unsure where to start. I guess I spent like the first few days watching tutorials and asking colleagues questions. Then I started using it for smaller tasks before moving on to more complicated reports. It was a perfect beginning, but eventually I became more comfortable enough to use it independently.",
+    "transcribe_seconds": 4.05
+  },
+  {
+    "clip_id": "clip04_filler",
+    "audio_file": "clip04_filler.m4a",
+    "condition": "filler",
+    "length": "long",
+    "whisper_transcript": "I think they would probably say that I'm reliable like if sometimes something needs to be done. They know our follow true. I guess they also mentioned communication because I try to keep an update. Sometimes projects get a little messy and people aren't on racial what's going on. So I try to help clarify things. I mean that's probably what they would say although you'll have to ask them to be shut.",
+    "transcribe_seconds": 3.52
+  },
+  {
+    "clip_id": "clip05_fast",
+    "audio_file": "clip05_fast.m4a",
+    "condition": "fast",
+    "length": "short",
+    "whisper_transcript": "One project I am proud of involved coordinating several departments to launch new internal processors and although there were a lot of moving parts to manage to keep everything on track by having frequent check-ins, documenting decisions and responding quickly whenever issues came out, we shall once meet the line and achieve objectives that have been set at the beginning of the project.",
+    "transcribe_seconds": 2.36
+  },
+  {
+    "clip_id": "clip06_fast",
+    "audio_file": "clip06_fast.m4a",
+    "condition": "fast",
+    "length": "short",
+    "whisper_transcript": "When I have multiple deadlines, I usually start by identifying which tasks are the most urgent and reach head the most because impact. Then I bring everything into smaller actions, estimate how long each item will rotate and arrange them in order while continuously reviewing about this route the reach. Because the request can come in unexpectedly and I want to make sure important work is not delayed.",
+    "transcribe_seconds": 2.84
+  },
+  {
+    "clip_id": "clip07_short",
+    "audio_file": "clip07_short.m4a",
+    "condition": "normal",
+    "length": "short",
+    "whisper_transcript": "What motivates me most is seeing tangible results from my efforts. I enjoy solving problems, improving processors and knowing that my work has a positive impact on the team or organization. Continuous learning and opportunities for growth are also strong motivators for me.",
+    "transcribe_seconds": 1.99
+  },
+  {
+    "clip_id": "clip08_long",
+    "audio_file": "clip08_long.m4a",
+    "condition": "normal",
+    "length": "long",
+    "whisper_transcript": "In the previous row, I noticed that our team's main significant amount of time and early compiling information from multiple sources into weekly reports. The process was repetitive time consuming and occasionally led to errors because information had to be copied and checked several times before the report could be finalized. I began by observing how different team members completed the task and documenting each that evolved. I started identifying the both time consuming areas. I proposed creating a standardized workflow that incurred templates, automated data collection with possible and clearer responsibilities for different stages of the reporting processes. To implement the change, I collaborated with colleagues to test the new workflow on a smaller scale before running it out to the entire team. Doing the final pilot phase, we gathered feedback and made adjustments based on vertical challenges that emerged. The final process reduced manual effort, improved consistency, our cost reports, and allowed team members to spend more time analyzing information rather than get there in yet. Beyond the efficiency gain, the project also highlighted the value of continuous improvement and showed how small operational changes can create meaningful benefits over time.",
+    "transcribe_seconds": 7.88
+  },
+  {
+    "clip_id": "clip09_slowSoft",
+    "audio_file": "clip09_slowSoft.m4a",
+    "condition": "slowSoft",
+    "length": "long",
+    "whisper_transcript": "I once worked with a colleague who had a very different approach to planning a project. Initially, we discussed the advantages and disadvantages of each approach and looked at previous examples. Through these conversations, we developed a solution that combines the strongest aspects of both ideas. The experience we have forced, the importance of listening and remaining open-minded.",
+    "transcribe_seconds": 3.05
+  },
+  {
+    "clip_id": "clip10_slowSoft",
+    "audio_file": "clip10_slowSoft.m4a",
+    "condition": "slowSoft",
+    "length": "short",
+    "whisper_transcript": "Unexpected changes are common in many world environments. So I tried to remain flexible and focus on what can be controlled, whereby this shift at first access how the change impacts current tasks and deadlines. I think communicating relevant stakeholders and the judge plans accordingly. Stay organized in maintaining clear communication, health videos, and then share the important objective is continue to move forward.",
+    "transcribe_seconds": 3.22
+  }
+]
