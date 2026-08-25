@@ -1,0 +1,560 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: oklch(97% 0.02 85);
+  --surface: oklch(99% 0.008 85);
+  --border: oklch(88% 0.02 60);
+  --text: oklch(25% 0.02 55);
+  --text-muted: oklch(45% 0.02 55);
+  --text-soft: oklch(55% 0.015 60);
+  --heading: oklch(22% 0.02 55);
+  --accent: oklch(65% 0.16 40);
+  --accent-hover: oklch(56% 0.17 40);
+  --accent-soft: oklch(93% 0.04 50);
+  --accent-soft-text: oklch(45% 0.13 40);
+  --error: oklch(55% 0.18 25);
+}
+
+body {
+  font-family: "Karla", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  color: var(--heading);
+}
+
+/* Overall page shell: navbar + content + footer */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px 64px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--surface);
+  border-bottom: 1.5px solid var(--border);
+}
+
+.navbar-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-hint {
+  font-size: 12.5px;
+  color: var(--text-soft);
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .login-hint {
+    display: inline;
+  }
+}
+
+.btn-login {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  border-top: 1.5px solid var(--border);
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+/* Main screen containers */
+.screen {
+  width: 100%;
+  max-width: 680px;
+}
+
+.screen h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Subtitle text under headings */
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* Job description input box */
+textarea {
+  width: 100%;
+  padding: 18px 20px;
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  font-size: 14.5px;
+  font-family: inherit;
+  resize: vertical;
+  background: var(--surface);
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+textarea::placeholder {
+  color: var(--text-soft);
+}
+
+/* Box grouping the pre-interview settings (question count + types) */
+.settings-box {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 22px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* One row inside the settings box (label + control) */
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.settings-row > label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* Number-of-questions dropdown */
+#num-questions {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--accent-soft);
+  color: var(--accent-soft-text);
+}
+
+/* Question type checkbox group */
+.type-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.type-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border-radius: 20px;
+  border: 1.5px solid var(--border);
+  background: oklch(96% 0.01 60);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-soft);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s;
+}
+
+.type-checkboxes label:has(input:checked) {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.type-checkboxes input {
+  accent-color: var(--accent);
+}
+
+/* General button styling */
+button {
+  padding: 13px 24px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+button:disabled {
+  background: oklch(85% 0.01 60);
+  cursor: not-allowed;
+}
+
+/* Small label showing question type (e.g. Technical, Behavioural) */
+.type-box {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-soft-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Box containing the interview question */
+.question-box {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 20px 22px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+/* Recorder section containing record button and status text */
+.recorder {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Text showing recording/transcription status */
+#record-status {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* Special button colour while recording is active */
+#btn-record.recording {
+  background: var(--error);
+}
+
+/* Webcam preview wrapper */
+#cam-wrap {
+  position: relative;
+  width: 280px;
+  margin-bottom: 16px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+}
+
+#cam-wrap.hidden {
+  display: none;
+}
+
+/* Webcam video feed */
+#cam-feed {
+  width: 100%;
+  display: block;
+  transform: scaleX(-1);
+}
+
+/* Live badge showing whether eye contact is detected */
+.eye-live-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+/* Footer section inside each question result card */
+.result-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.tone-row,
+.sentiment-score-row,
+.eye-contact-row {
+  display: flex;
+  align-items: center;
+}
+
+.tone-row {
+  justify-content: space-between;
+}
+
+/* Push overall score to the far right */
+.overall-score {
+  font-size: 14.5px;
+}
+
+/* Eye contact score tag */
+.eye-score-tag {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Transcript preview container */
+#transcript-box {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+/* Small label text used above transcript */
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--accent-soft-text);
+  margin-bottom: 6px;
+}
+
+/* Final report summary box */
+.summary-box {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* Heading inside report summary */
+.summary-box h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+/* Row showing one score item in the summary */
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid oklch(93% 0.01 60);
+  font-size: 14.5px;
+}
+
+/* Remove bottom border on the last row */
+.score-row:last-child {
+  border-bottom: none;
+}
+
+/* Value text on right side of score row */
+.score-row .val {
+  font-weight: 700;
+}
+
+/* Small percentage label showing score weight */
+.weight-tag {
+  font-size: 11px;
+  color: var(--text-soft);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* Final weighted score styling */
+.final-score {
+  font-size: 17px;
+  font-weight: 700;
+  padding-top: 12px;
+  margin-top: 4px;
+  color: var(--accent-soft-text);
+}
+
+/* Card for each individual question result */
+.question-result {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* Question heading inside each result card */
+.question-result h3 {
+  font-size: 15px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+/* Short transcript preview under each question */
+.question-result .transcript-preview {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+/* One scoring dimension block */
+.dim-row {
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+/* Header row inside each scoring dimension */
+.dim-row .dim-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* Explanation text for each score */
+.dim-row .rationale {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Tag used to show sentiment label */
+.sentiment-tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Colour variations for different sentiment types */
+.sentiment-tag.POSITIVE {
+  background: oklch(90% 0.08 145);
+  color: oklch(35% 0.1 145);
+}
+.sentiment-tag.NEUTRAL {
+  background: oklch(92% 0.01 85);
+  color: oklch(45% 0.01 85);
+}
+.sentiment-tag.NEGATIVE {
+  background: oklch(90% 0.07 25);
+  color: oklch(40% 0.14 25);
+}
+
+/* Small tag used to show question type in the report */
+.type-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 700;
+  background: var(--accent-soft);
+  color: var(--accent-soft-text);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Full-screen loading overlay shown during processing */
+.loading {
+  position: fixed;
+  inset: 0;
+  background: oklch(97% 0.02 85 / 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 15px;
+  color: var(--text-muted);
+  z-index: 100;
+}
+
+/* Circular loading spinner */
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Spinner rotation animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error message text */
+.error {
+  color: var(--error);
+  font-size: 14px;
+  margin-top: 10px;
+}

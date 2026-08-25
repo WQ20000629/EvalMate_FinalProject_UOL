@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>MediaPipe Eye Contact Eval</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #111; color: #eee; padding: 20px; }
+    #wrap { position: relative; display: inline-block; }
+    video { width: 480px; height: 360px; display: block; border-radius: 8px; transform: scaleX(-1); }
+    canvas { position: absolute; top: 0; left: 0; width: 480px; height: 360px; pointer-events: none; }
+    #panel { margin-top: 16px; background: #222; padding: 14px; border-radius: 8px; max-width: 480px; font-size: 0.9rem; line-height: 2; }
+    .ok  { color: #4ade80; font-weight: 700; }
+    .bad { color: #f87171; font-weight: 700; }
+    .dim { color: #888; }
+    #status { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
+    button { margin: 8px 6px 0 0; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 0.88rem; color: #fff; }
+    #btn-start { background: #16a34a; }
+    #btn-stop  { background: #dc2626; }
+    #btn-reset { background: #2563eb; }
+  </style>
+</head>
+<body>
+  <h2>MediaPipe FaceMesh — Eye Contact Eval</h2>
+  <div id="wrap">
+    <video id="vid" autoplay muted playsinline></video>
+    <canvas id="cv"></canvas>
+  </div>
+  <div id="panel">
+    <div id="status" class="dim">Ready</div>
+    <div id="s-face">Face: —</div>
+    <div id="s-kp">Keypoints: —</div>
+    <div id="s-hl">Left H ratio: —</div>
+    <div id="s-hr">Right H ratio: —</div>
+    <div id="s-vl">Left V ratio: —</div>
+    <div id="s-vr">Right V ratio: —</div>
+    <div id="s-frames">Frames: 0 / 0</div>
+    <div id="s-score">Score: —</div>
+  </div>
+  <button id="btn-start">▶ Start</button>
+  <button id="btn-stop">■ Stop & Score</button>
+  <button id="btn-reset">↺ Reset</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+  <script>
+    const vid = document.getElementById("vid");
+    const cv  = document.getElementById("cv");
+    const ctx = cv.getContext("2d");
+    cv.width = 480; cv.height = 360;
+
+    let okFrames = 0, totalFrames = 0, running = false;
+    let camStream = null, camLoop = null;
+
+    // Same heuristic as app.js: hRatio/vRatio + the same acceptance bands.
+    function hRatio(a, b, iris) {
+      const lo = Math.min(a.x, b.x), hi = Math.max(a.x, b.x);
+      if (hi - lo < 0.001) return 0.5;
+      return (iris.x - lo) / (hi - lo);
+    }
+
+    function vRatio(top, bot, iris) {
+      const lo = Math.min(top.y, bot.y), hi = Math.max(top.y, bot.y);
+      if (hi - lo < 0.001) return 0.5;
+      return (iris.y - lo) / (hi - lo);
+    }
+
+    function dot(x, y, r, col) {
+      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fillStyle = col; ctx.fill();
+    }
+
+    function cx(p) { return (1 - p.x) * cv.width; }
+    function cy(p) { return p.y * cv.height; }
+
+    function onFrame(data) {
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      if (!running) return;
+      totalFrames++;
+
+      if (!data.multiFaceLandmarks || !data.multiFaceLandmarks.length) {
+        document.getElementById("s-face").innerHTML = `Face: <span class="bad">NO</span>`;
+        setStatus(false); updateScore(); return;
+      }
+
+      const lm = data.multiFaceLandmarks[0];
+      document.getElementById("s-face").innerHTML = `Face: <span class="ok">YES</span>`;
+      document.getElementById("s-kp").textContent = `Keypoints: ${lm.length}`;
+
+      lm.forEach(p => dot(cx(p), cy(p), 1, "rgba(100,180,255,0.3)"));
+
+      if (lm.length < 474) { okFrames++; setStatus(true); updateScore(); return; }
+
+      [lm[33], lm[133], lm[263], lm[362]].forEach(p => dot(cx(p), cy(p), 4, "#facc15"));
+      [lm[468], lm[473]].forEach(p => dot(cx(p), cy(p), 6, "#f97316"));
+      [lm[159], lm[145], lm[386], lm[374]].forEach(p => dot(cx(p), cy(p), 3, "#22d3ee"));
+
+      const hl = hRatio(lm[33], lm[133], lm[468]);
+      const hr = hRatio(lm[263], lm[362], lm[473]);
+      const vl = vRatio(lm[159], lm[145], lm[468]);
+      const vr = vRatio(lm[386], lm[374], lm[473]);
+
+      const lOk = hl >= 0.35 && hl <= 0.65 && vl >= 0.20 && vl <= 0.55;
+      const rOk = hr >= 0.35 && hr <= 0.65 && vr >= 0.20 && vr <= 0.55;
+      if (lOk && rOk) okFrames++;
+
+      document.getElementById("s-hl").innerHTML = `Left H: <span class="${lOk?'ok':'bad'}">${hl.toFixed(3)}</span> (valid: 0.35–0.65)`;
+      document.getElementById("s-hr").innerHTML = `Right H: <span class="${rOk?'ok':'bad'}">${hr.toFixed(3)}</span>`;
+      document.getElementById("s-vl").innerHTML = `Left V: <span class="${(vl>=0.2&&vl<=0.55)?'ok':'bad'}">${vl.toFixed(3)}</span> (valid: 0.20–0.55)`;
+      document.getElementById("s-vr").innerHTML = `Right V: <span class="${(vr>=0.2&&vr<=0.55)?'ok':'bad'}">${vr.toFixed(3)}</span>`;
+
+      setStatus(lOk && rOk); updateScore();
+    }
+
+    function setStatus(ok) {
+      const el = document.getElementById("status");
+      el.textContent = ok ? "✓ Eye Contact" : "✗ Look at camera";
+      el.className = ok ? "ok" : "bad";
+    }
+
+    function updateScore() {
+      document.getElementById("s-frames").textContent = `Frames: ${okFrames} / ${totalFrames}`;
+      const pct   = totalFrames > 0 ? (okFrames / totalFrames * 100).toFixed(1) : "0.0";
+      const score = totalFrames > 0 ? (okFrames / totalFrames * 10).toFixed(1)  : "0.0";
+      document.getElementById("s-score").innerHTML = `Score: <strong>${score}/10</strong> (${pct}%)`;
+    }
+
+    const faceMesh = new FaceMesh({
+      locateFile: f => `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${f}`
+    });
+    faceMesh.setOptions({ maxNumFaces: 1, refineLandmarks: true, minDetectionConfidence: 0.5, minTrackingConfidence: 0.5 });
+    faceMesh.onResults(onFrame);
+
+    document.getElementById("btn-start").addEventListener("click", async () => {
+      okFrames = 0; totalFrames = 0; running = true;
+      camStream = await navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480 }, audio: false });
+      vid.srcObject = camStream;
+      await new Promise(r => { vid.onloadedmetadata = r; });
+      await vid.play();
+      camLoop = new Camera(vid, {
+        onFrame: async () => { if (running) await faceMesh.send({ image: vid }); },
+        width: 640, height: 480,
+      });
+      await camLoop.start();
+      document.getElementById("status").textContent = "Tracking...";
+      document.getElementById("status").className = "dim";
+    });
+
+    document.getElementById("btn-stop").addEventListener("click", () => {
+      running = false;
+      if (camLoop) { camLoop.stop(); camLoop = null; }
+      if (camStream) { camStream.getTracks().forEach(t => t.stop()); camStream = null; }
+      vid.srcObject = null;
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      updateScore();
+      document.getElementById("status").textContent = "Stopped";
+      document.getElementById("status").className = "dim";
+    });
+
+    document.getElementById("btn-reset").addEventListener("click", () => {
+      okFrames = 0; totalFrames = 0; updateScore();
+    });
+  </script>
+</body>
+</html>
