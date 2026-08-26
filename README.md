@@ -17,12 +17,18 @@ cd backend
 pip install -r requirements.txt
 ```
 
+### 3. Install frontend dependencies
+
+```
+cd frontend
+npm install
+```
+
 ---
 
 ## Running the App
 
-You need **3 terminals** running simultaneously.
-
+You need **2 terminals** running simultaneously, plus Ollama running in the background (the desktop app, or `ollama serve` in its own terminal if it isn't already running as a service).
 
 ### Terminal 1 — Backend (from the `backend` folder)
 
@@ -38,7 +44,9 @@ API docs available at: `http://localhost:8000/docs`
 
 ```
 cd frontend
-python -m http.server 3000
+npm run dev
 ```
 
-Frontend runs at: `http://localhost:3000`
+Frontend runs at: `http://localhost:5173`
+
+The frontend is a React + TypeScript app (Vite) — it needs its dev server running via `npm run dev`, not a plain static file server.

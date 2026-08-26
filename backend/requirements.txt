@@ -5,3 +5,6 @@ openai-whisper
 requests
 transformers
 torch
+sqlalchemy
+psycopg2-binary
+python-dotenv

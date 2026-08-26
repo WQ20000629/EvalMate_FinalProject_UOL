@@ -17,6 +17,7 @@
   --accent-soft: oklch(93% 0.04 50);
   --accent-soft-text: oklch(45% 0.13 40);
   --error: oklch(55% 0.18 25);
+  --ring-track: oklch(91% 0.008 85);
 }
 
 body {
@@ -335,35 +336,14 @@ button:disabled {
   transition: background 0.3s;
 }
 
-/* Footer section inside each question result card */
+/* Footer row inside each question result card / summary box (answer tone) */
 .result-footer {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 14px;
-}
-
-.tone-row,
-.sentiment-score-row,
-.eye-contact-row {
-  display: flex;
   align-items: center;
-}
-
-.tone-row {
-  justify-content: space-between;
-}
-
-/* Push overall score to the far right */
-.overall-score {
-  font-size: 14.5px;
-}
-
-/* Eye contact score tag */
-.eye-score-tag {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--text-muted);
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid oklch(93% 0.01 60);
 }
 
 /* Transcript preview container */
@@ -400,40 +380,134 @@ button:disabled {
   margin-bottom: 14px;
 }
 
-/* Row showing one score item in the summary */
-.score-row {
+/* Score ring + metric meters, side by side (summary box and per-question cards) */
+.score-card-b {
   display: flex;
-  justify-content: space-between;
-  padding: 9px 0;
-  border-bottom: 1px solid oklch(93% 0.01 60);
-  font-size: 14.5px;
+  gap: 24px;
+  align-items: flex-start;
 }
 
-/* Remove bottom border on the last row */
-.score-row:last-child {
-  border-bottom: none;
+.score-ring-block {
+  flex-shrink: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
 }
 
-/* Value text on right side of score row */
-.score-row .val {
+.score-ring-wrap {
+  position: relative;
+}
+
+.score-ring-svg {
+  transform: rotate(-90deg);
+}
+
+.score-ring-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-ring-number {
+  font-family: "Karla", sans-serif;
   font-weight: 700;
+  font-size: 28px;
+  color: var(--heading);
+  line-height: 1;
 }
 
-/* Small percentage label showing score weight */
-.weight-tag {
+.score-ring-out-of {
   font-size: 11px;
   color: var(--text-soft);
-  font-weight: 400;
-  margin-left: 4px;
 }
 
-/* Final weighted score styling */
-.final-score {
-  font-size: 17px;
+.score-ring-caption {
+  font-size: 12px;
   font-weight: 700;
-  padding-top: 12px;
-  margin-top: 4px;
-  color: var(--accent-soft-text);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.score-comment {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.metrics-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.metric-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.metric-meter-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-meter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.metric-meter-value {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.metric-meter-icon {
+  display: inline-flex;
+}
+
+.metric-meter-track {
+  height: 7px;
+  border-radius: 4px;
+  background: var(--ring-track);
+  overflow: hidden;
+}
+
+.metric-meter-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.metric-meter-rationale {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-soft);
+  margin-top: 2px;
+}
+
+@media (max-width: 520px) {
+  .score-card-b {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Card for each individual question result */
@@ -463,26 +537,6 @@ button:disabled {
   font-style: italic;
 }
 
-/* One scoring dimension block */
-.dim-row {
-  font-size: 13.5px;
-  margin-bottom: 10px;
-}
-
-/* Header row inside each scoring dimension */
-.dim-row .dim-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-/* Explanation text for each score */
-.dim-row .rationale {
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
 /* Tag used to show sentiment label */
 .sentiment-tag {
   display: inline-block;
@@ -490,7 +544,6 @@ button:disabled {
   border-radius: 20px;
   font-size: 12.5px;
   font-weight: 700;
-  margin-top: 10px;
 }
 
 /* Colour variations for different sentiment types */

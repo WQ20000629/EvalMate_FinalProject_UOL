@@ -5,6 +5,27 @@ function sentimentToScore(label: string, confidence: number): number {
   return Math.round((base[label] ?? 5) * confidence * 10) / 10;
 }
 
+/**
+ * The same weighted formula the backend uses in aggregate_results(), applied to a
+ * single answer. Used so a per-question ring shows the same "overall score" concept
+ * as the session summary (sentiment + eye contact included), not the LLM's own
+ * unweighted overall_score field (which only averages the 4 rubric dimensions).
+ */
+export function computeWeightedScore(r: SessionResult): number {
+  const sScore = sentimentToScore(r.sentiment.label, r.sentiment.confidence);
+  const eyeVal = r.eye_contact_score ?? null;
+  const eyeWeightUsed = eyeVal !== null ? 0.1 : 0;
+  const llmScale = (1.0 - 0.1 - eyeWeightUsed) / 0.8;
+  return (
+    r.evaluation.relevance.score * 0.2 * llmScale +
+    r.evaluation.content_depth.score * 0.2 * llmScale +
+    r.evaluation.clarity_structure.score * 0.2 * llmScale +
+    r.evaluation.confidence_delivery.score * 0.2 * llmScale +
+    sScore * 0.1 +
+    (eyeVal ?? 0) * eyeWeightUsed
+  );
+}
+
 function avgSentiment(data: SessionResult[]): number | null {
   const scores = data.map((r) => sentimentToScore(r.sentiment.label, r.sentiment.confidence));
   if (!scores.length) return null;
@@ -33,18 +54,7 @@ export function fallbackAggregate(data: SessionResult[]): ReportSummary {
     keys.forEach((k) => {
       sums[k] += r.evaluation[k].score;
     });
-    const sScore = sentimentToScore(r.sentiment.label, r.sentiment.confidence);
-    const eyeVal = r.eye_contact_score ?? null;
-    const eyeWeightUsed = eyeVal !== null ? 0.1 : 0;
-    const llmScale = (1.0 - 0.1 - eyeWeightUsed) / 0.8;
-    const weighted =
-      r.evaluation.relevance.score * 0.2 * llmScale +
-      r.evaluation.content_depth.score * 0.2 * llmScale +
-      r.evaluation.clarity_structure.score * 0.2 * llmScale +
-      r.evaluation.confidence_delivery.score * 0.2 * llmScale +
-      sScore * 0.1 +
-      (eyeVal ?? 0) * eyeWeightUsed;
-    weightedTotal += weighted;
+    weightedTotal += computeWeightedScore(r);
     tones.push(r.sentiment.label);
   });
 
