@@ -71,10 +71,20 @@ h3 {
     gap: 16px;
 }
 
+/* Logo button that returns to the home screen. */
 .brand {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.brand:hover {
+    background: none;
 }
 
 .brand-mark {

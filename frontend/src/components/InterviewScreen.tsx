@@ -44,6 +44,16 @@ export function InterviewScreen({
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [question]);
 
+    // Turn off the microphone and webcam when leaving the interview screen.
+    const { cancelRecording } = audio;
+    const { stop: stopGaze } = gaze;
+    useEffect(() => {
+        return () => {
+            cancelRecording();
+            stopGaze();
+        };
+    }, [cancelRecording, stopGaze]);
+
     // Copy each new transcript into the editable text area.
     useEffect(() => {
         setEditedTranscript(audio.transcript ?? "");

@@ -9,20 +9,27 @@ import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { LoginModal } from "./LoginModal";
 
-// Props for Navbar: callback that opens the history screen.
+// Props for Navbar: callbacks that open the history screen and the home screen.
 interface NavbarProps {
     onViewHistory: () => void;
+    onHome: () => void;
 }
 
 // Top navigation bar with account actions and history access.
-export function Navbar({ onViewHistory }: NavbarProps) {
+export function Navbar({ onViewHistory, onHome }: NavbarProps) {
     const { user, logout } = useAuth();
     const [showModal, setShowModal] = useState(false);
 
     return (
         <header className="navbar">
             <div className="navbar-inner">
-                <div className="brand">
+                {/* Clicking the logo ends the current session and returns home. */}
+                <button
+                    type="button"
+                    className="brand"
+                    onClick={onHome}
+                    aria-label="EvalMate home"
+                >
                     <svg
                         className="brand-mark"
                         viewBox="0 0 200 200"
@@ -57,7 +64,7 @@ export function Navbar({ onViewHistory }: NavbarProps) {
                         />
                     </svg>
                     <span className="brand-name">EvalMate</span>
-                </div>
+                </button>
 
                 <div className="navbar-actions">
                     {user ? (

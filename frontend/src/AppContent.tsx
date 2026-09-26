@@ -169,7 +169,7 @@ function AppContent() {
 
     return (
         <div className="app-shell">
-            <Navbar onViewHistory={handleViewHistory} />
+            <Navbar onViewHistory={handleViewHistory} onHome={handleRestart} />
 
             <main className="app-main">
                 {screen === "setup" && (

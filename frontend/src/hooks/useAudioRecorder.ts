@@ -81,6 +81,18 @@ export function useAudioRecorder() {
         setStatusText("Processing...");
     }, []);
 
+    // Stop the microphone without sending the audio for transcription.
+    const cancelRecording = useCallback(() => {
+        const recorder = recorderRef.current;
+        if (recorder && recorder.state !== "inactive") {
+            // Replace the normal stop handler so it only releases the microphone.
+            recorder.onstop = () =>
+                recorder.stream.getTracks().forEach((t) => t.stop());
+            recorder.stop();
+        }
+        recorderRef.current = null;
+    }, []);
+
     // Clear the current recording and all related messages.
     const reset = useCallback(() => {
         setRecordingActive(false);
@@ -99,6 +111,7 @@ export function useAudioRecorder() {
         error,
         startRecording,
         stopRecording,
+        cancelRecording,
         reset,
     };
 }
