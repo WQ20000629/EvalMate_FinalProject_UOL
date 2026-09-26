@@ -1,0 +1,392 @@
+[
+  {
+    "jd_file": "jd_01.txt",
+    "run": 1,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a situation where you had to work with a team to resolve a complex technical issue in a fast-paced environment?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: How would you handle a situation where a customer is requesting a feature that is not currently implemented in the web application, but is necessary for the project's requirements?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: What motivates you to stay up-to-date with new technologies and skills in the software engineering field, and how do you think this will benefit the company?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_01.txt",
+    "run": 2,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you describe a situation where you had to troubleshoot and debug a complex issue in a web application, and how did you approach the problem?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to stay up-to-date with the latest technologies and programming languages, and how do you see yourself contributing to the team's continuous learning and growth?",
+        "type": "Motivational"
+      },
+      {
+        "question": "Give an example of a time when you had to work with a cross-functional team to develop a software application, and what was your role in the team, and how did you contribute to its success?",
+        "type": "Behavioural"
+      }
+    ],
+    "type_counts": {
+      "Situational": 1,
+      "Motivational": 1,
+      "Behavioural": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_01.txt",
+    "run": 3,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you describe a situation where you had to troubleshoot and debug a complex issue with a web application, and how you went about resolving it?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If you were working on a project with a tight deadline and a team of engineers, how would you handle a situation where one of the team members is not meeting their responsibilities?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to constantly learn and adapt to new technologies and software development methodologies, and how do you see yourself growing in this role?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_02.txt",
+    "run": 1,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a situation where you had to manage multiple marketing campaigns simultaneously, and how you ensured their successful execution?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: If you were tasked with increasing brand awareness for a new product launch, how would you approach the campaign, and what channels would you prioritize?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: What motivates you to stay ahead of the curve in terms of marketing trends and technologies, and how do you incorporate this knowledge into your work?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_02.txt",
+    "run": 2,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a time when you had to manage multiple marketing campaigns simultaneously and how you ensured their successful execution?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: Imagine you're tasked with increasing engagement on a brand's social media channels, but you notice that the current content strategy isn't resonating with the target audience. How would you approach this situation and what changes would you implement?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: What drives your passion for marketing and creative content, and how do you stay inspired and motivated in your work, particularly in a fast-paced and dynamic environment?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_02.txt",
+    "run": 3,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a time when you had to manage multiple marketing campaigns simultaneously, and how you ensured their successful execution?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: If you were tasked with launching a new product, but the launch campaign had to be adjusted due to changes in the target audience, how would you adapt the campaign and what steps would you take to mitigate any potential losses?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: What motivates you to stay up-to-date with the latest marketing technologies and platforms, and how do you see yourself contributing to the company's growth through innovation?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_03.txt",
+    "run": 1,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you describe a time when you had to communicate complex technical information to a non-technical stakeholder, and how did you approach the situation?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If your project was running behind schedule and the business stakeholders were becoming increasingly impatient, what steps would you take to get the project back on track?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to stay up-to-date with the latest developments in analytics, cloud, and AI technologies, and how do you incorporate that knowledge into your work?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_03.txt",
+    "run": 2,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you give an example of a time when you had to communicate complex technical information to a non-technical stakeholder, and how you adapted your approach to meet their needs?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If you were tasked with implementing a new data warehouse in a complex enterprise environment, how would you handle the challenges of managing stakeholder requirements and ensuring the successful delivery of the project?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to stay up-to-date with the latest developments in analytics, cloud, and AI technologies, and how do you think this drives your ability to deliver innovative solutions to business stakeholders?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_03.txt",
+    "run": 3,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a situation where you had to manage stakeholder expectations and deliver multiple analytics initiatives or workstreams simultaneously?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: If a business stakeholder presented you with a new KPI that required integrating data from multiple sources, how would you approach designing and implementing the solution?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: What drives your passion for data analytics and AI, and how do you see yourself contributing to the development of cutting-edge solutions that support operational excellence and data-driven decision-making?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_04.txt",
+    "run": 1,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you describe a situation where you had to handle a difficult customer complaint and resolve it to their satisfaction?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If you received an order that was incorrect or missing items, how would you handle the situation and ensure that the customer receives their correct order?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to deliver exceptional customer service, and how do you think this role will allow you to grow professionally?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_04.txt",
+    "run": 2,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you describe a situation where you had to handle a difficult customer complaint and provide excellent service to resolve the issue?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If you were working on a team project to resolve a complex customer query, and one of your team members was not pulling their weight, how would you handle the situation?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to provide exceptional customer service, and how do you ensure that you are meeting the needs of your customers?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_04.txt",
+    "run": 3,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Can you describe a time when you had to handle a complex customer complaint, and how you went about resolving it to the customer's satisfaction?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If a customer was unhappy with their order and demanded a full refund, but you had already processed the refund according to company policy, how would you handle the situation?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to go above and beyond in providing excellent customer service, and can you give an example of a time when you did so?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_05.txt",
+    "run": 1,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a situation where you had to handle high-volume financial data in a previous role or internship? How did you ensure accuracy and maintain productivity?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: Imagine you are working on a project that requires you to implement optimized finance procedures. You have identified a potential issue with the current process that could impact data flow and operational efficiency. How would you approach this situation and collaborate with relevant departments?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: Why do you believe you would be a good fit for this Finance Executive role, and what do you hope to achieve in this position, particularly in terms of contributing to the growth and expansion of Anda's operations?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_05.txt",
+    "run": 2,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Tell me about a time when you had to handle multiple financial tasks simultaneously, and how you ensured accuracy and efficiency in your work.",
+        "type": "Behavioural"
+      },
+      {
+        "question": "If you were tasked with implementing new financial procedures in your current role, how would you approach the project, and what steps would you take to ensure its successful implementation?",
+        "type": "Situational"
+      },
+      {
+        "question": "What motivates you to pursue a career in finance, and how do you think your skills and experience will contribute to the success of Anda as a Finance Executive?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  },
+  {
+    "jd_file": "jd_05.txt",
+    "run": 3,
+    "requested": 3,
+    "returned_count": 3,
+    "questions": [
+      {
+        "question": "Question: Can you describe a situation where you had to handle high-volume financial tasks with a high degree of accuracy and attention to detail, and how you ensured the quality of your work?",
+        "type": "Behavioural"
+      },
+      {
+        "question": "Question: How would you handle a situation where you were tasked with implementing a new finance procedure, but the team was resistant to change and had concerns about the impact on their workflow?",
+        "type": "Situational"
+      },
+      {
+        "question": "Question: What motivates you to deliver high-quality financial results and ensure the accuracy of financial records, and how do you stay motivated in a fast-paced environment?",
+        "type": "Motivational"
+      }
+    ],
+    "type_counts": {
+      "Behavioural": 1,
+      "Situational": 1,
+      "Motivational": 1
+    },
+    "general_count": 0
+  }
+]

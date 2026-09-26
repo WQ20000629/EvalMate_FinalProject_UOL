@@ -1,27 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Interview Evaluator</title>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EvalMate</title>
 
-    <!-- Direction B typography: Lora (headings) + Karla (body) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap"
-    />
+        <!-- Load the fonts used for headings and normal text. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        />
 
-    <!-- MediaPipe helper for webcam handling -->
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+        <!-- Load the MediaPipe helper used to access the webcam. -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- MediaPipe FaceMesh library for face landmark / eye contact tracking -->
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Load MediaPipe FaceMesh for face and eye-contact tracking. -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!-- React renders the application inside this element. -->
+        <div id="root"></div>
+        <!-- Start the React application. -->
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>

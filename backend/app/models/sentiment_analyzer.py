@@ -1,27 +1,29 @@
-# Import necessary libraries
+# ------------------------------------------------------------------
+# File: backend/app/models/sentiment_analyzer.py
+# Purpose: Classifies answer transcripts as positive, neutral, or negative.
+# ------------------------------------------------------------------
+
+# Import the Hugging Face library used for sentiment analysis
 from transformers import pipeline
 
+
 class SentimentAnalyzer:
-    """
-    Performs sentiment (tone) analysis on text using a HuggingFace model.
-    The class maps model-specific labels into standardised labels:
-    NEGATIVE, NEUTRAL, and POSITIVE, and returns both the label
-    and its confidence score.
-    """
-    # Mapping from model output labels to standardised labels
+    """Use a Hugging Face model to detect whether text is positive, neutral, or negative."""
+
+    # Map the model labels to the labels used in this app
+    # ref: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
     tone_labels = {
         "LABEL_0": "NEGATIVE",
         "LABEL_1": "NEUTRAL",
         "LABEL_2": "POSITIVE",
         "negative": "NEGATIVE",
-        "neutral":  "NEUTRAL",
+        "neutral": "NEUTRAL",
         "positive": "POSITIVE",
     }
 
     def __init__(self, model="cardiffnlp/twitter-roberta-base-sentiment-latest"):
-        """
-        Initialise the sentiment analyzer with a HuggingFace model.
-        """
+        """Load the sentiment model."""
+        # ref: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
         self.hf_model = model
         self.classifier = pipeline(
             "sentiment-analysis",
@@ -30,24 +32,14 @@ class SentimentAnalyzer:
         )
 
     def analyze(self, text):
-        """
-        Analyze the sentiment of a given text input.
-        Returns:
-            dict: {
-                "label": "POSITIVE" / "NEUTRAL" / "NEGATIVE",
-                "confidence": float
-            }
-        """
+        """Return the sentiment label and confidence for a piece of text."""
         if not text or not text.strip():
             return {"label": "NEUTRAL", "confidence": 0.0}
 
-        # Run the model (truncated to avoid overly long inputs)
+        # Run the model on the text and keep it short enough for memory
         output = self.classifier(text, truncation=True, max_length=512)[0]
 
-        # Extract raw label returned by the model
         raw = output["label"]
-
-        # Convert model-specific label into standardised label
         mapped = self.tone_labels.get(raw, raw.upper())
 
         return {

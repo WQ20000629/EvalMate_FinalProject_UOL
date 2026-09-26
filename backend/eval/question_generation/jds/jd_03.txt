@@ -1,0 +1,39 @@
+Job description:
+
+
+
+Key Responsibilities
+
+THE ROLE
+
+The Data Analyst will work closely with business and technology teams to design and deliver data, analytics, and AI solutions that support operational excellence and data-driven decision-making.
+
+The role combines Business Intelligence, data engineering, Python development, and applied AI, with a strong focus on translating business problems into practical and scalable solutions.
+
+The successful candidate will be hands-on technically while also comfortable engaging stakeholders, understanding operational needs, managing requirements, and driving solutions from concept through implementation and continuous enhancement.
+
+
+KEY RESPONSIBILITIES
+
+Partner with business stakeholders to understand business objectives, operational challenges, KPIs and analytical requirements, and translate them into effective data, BI and AI solutions.
+Lead and own the end-to-end delivery of data, analytics and AI initiatives, encompassing requirements definition, solution design, development, implementation and continuous enhancement.
+Design, develop and maintain BI dashboards, reports and analytical products, primarily using Power BI or equivalent modern BI tools, to support enterprise reporting, operational analysis and decision-making.
+Analyse and interpret complex datasets to identify trends, patterns and actionable insights that support data-driven decision-making.
+Develop clear and intuitive data visualisation and storytelling to communicate complex information effectively to business stakeholders.
+Develop data processing, analytics, automation and AI-related components using SQL and Python.
+Explore and support the development of Generative AI and Agentic AI solutions, including LLM-powered applications, intelligent workflows and AI-enabled analytics use cases.
+Drive continuous improvement of BI, analytics, data and AI development standards, platforms and processes.
+Keep abreast of emerging developments in analytics, cloud and AI technologies and identify opportunities to apply them to business and operational challenges.
+
+Key Requirements
+
+Degree in Computer Science, Information Systems, Data Science, Data Analytics, Mathematics, Statistics, Engineering, Technology, or a relevant discipline.
+Relevant professional certifications in BI, cloud, data engineering, analytics or AI would be an advantage.
+Relevant working experience in Business Intelligence, Data Analytics, Data Engineering, AI Development or AI Product-related roles.
+Strong hands-on experience developing enterprise dashboards and analytical solutions using Microsoft Power BI, Tableau, or other modern BI tools.
+Demonstrated experience using Python for data processing, analytics, automation or AI-related development.
+Experience working with data warehouses, databases, data pipelines and modern cloud data platforms.
+Experience delivering analytics solutions in complex enterprise environments and working across both business and technology teams.
+Experience managing stakeholder requirements and delivering multiple analytics initiatives or workstreams.
+Experience with Microsoft Azure, AWS, Google Cloud Platform (GCP), or other major cloud platforms would be advantageous.
+Exposure to Generative AI, Large Language Models, RAG, Agentic AI or AI product development would be advantageous.

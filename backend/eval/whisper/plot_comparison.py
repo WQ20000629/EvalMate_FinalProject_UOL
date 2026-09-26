@@ -1,20 +1,21 @@
-"""
-Builds two bar charts comparing Whisper model sizes on WER, from the
-wer_report_<model>.json files produced by compute_wer.py.
+# ------------------------------------------------------------------
+# File: backend/eval/whisper/plot_comparison.py
+# Purpose: Creates charts comparing Word Error Rate across Whisper model sizes.
+# ------------------------------------------------------------------
 
-Usage:
-    python plot_comparison.py
-    python plot_comparison.py --models tiny base small
-"""
+"""Create a chart comparing the WER of different Whisper model sizes."""
+# Standard modules load report files and create output paths.
 import argparse
 import json
 import os
 
+# Matplotlib draws the comparison charts.
 import matplotlib.pyplot as plt
 
+# Paths to the files this script reads and writes
 HERE = os.path.dirname(__file__)
 
-# Chart chrome (light mode) from the project's validated palette.
+# Colours used for chart text, gridlines, and backgrounds.
 INK_PRIMARY = "#0b0b0b"
 INK_SECONDARY = "#52514e"
 INK_MUTED = "#898781"
@@ -22,16 +23,18 @@ GRIDLINE = "#e1e0d9"
 BASELINE = "#c3c2b7"
 SURFACE = "#fcfcfb"
 
-# Categorical slots 1-3 (blue, orange, aqua) - validated all-pairs CVD-safe.
+# Separate colours make the model sizes easy to compare.
 MODEL_COLORS = {
     "tiny": "#2a78d6",
     "base": "#eb6834",
     "small": "#1baf7a",
 }
+# Colour for the single-series overall chart
 SINGLE_HUE = "#2a78d6"
 
 
 def load_report(model_size):
+    """Load one saved WER report if it exists."""
     path = os.path.join(HERE, f"wer_report_{model_size}.json")
     if not os.path.exists(path):
         print(f"Skipping '{model_size}': no {os.path.basename(path)} found.")
@@ -41,6 +44,7 @@ def load_report(model_size):
 
 
 def style_axes(ax):
+    """Apply the shared visual style to a chart."""
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
@@ -52,6 +56,7 @@ def style_axes(ax):
 
 
 def plot_overall(reports, out_path):
+    """Create a chart of the overall WER for each model."""
     models = list(reports.keys())
     values = [reports[m]["overall_avg_wer"] for m in models]
 
@@ -75,8 +80,10 @@ def plot_overall(reports, out_path):
 
 
 def plot_by_condition(reports, out_path):
+    """Create a chart comparing WER by condition and model."""
     models = list(reports.keys())
 
+    # Average the clip scores for every condition and model.
     conditions = sorted({r["condition"] for rep in reports.values() for r in rep["per_clip"]})
     cond_avg = {m: {} for m in models}
     for m, rep in reports.items():
@@ -121,10 +128,12 @@ def plot_by_condition(reports, out_path):
 
 
 def main():
+    """Load the requested reports and save both comparison charts."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", default=["tiny", "base", "small"])
     args = parser.parse_args()
 
+    # Keep only the model reports that are available.
     reports = {}
     for m in args.models:
         rep = load_report(m)

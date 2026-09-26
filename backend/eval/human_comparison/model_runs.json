@@ -1,0 +1,677 @@
+[
+  {
+    "pair_id": "pair01",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair01",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair01",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair01",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair01",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair02",
+    "question_type": "Motivational",
+    "run": 1,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair02",
+    "question_type": "Motivational",
+    "run": 2,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair02",
+    "question_type": "Motivational",
+    "run": 3,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair02",
+    "question_type": "Motivational",
+    "run": 4,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair02",
+    "question_type": "Motivational",
+    "run": 5,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair03",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 2,
+    "confidence_delivery": 5
+  },
+  {
+    "pair_id": "pair03",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 6,
+    "content_depth": 4,
+    "clarity_structure": 3,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair03",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 3,
+    "confidence_delivery": 5
+  },
+  {
+    "pair_id": "pair03",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 4,
+    "confidence_delivery": 3
+  },
+  {
+    "pair_id": "pair03",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 5,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair04",
+    "question_type": "General",
+    "run": 1,
+    "relevance": 7,
+    "content_depth": 6,
+    "clarity_structure": 4,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair04",
+    "question_type": "General",
+    "run": 2,
+    "relevance": 6,
+    "content_depth": 5,
+    "clarity_structure": 7,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair04",
+    "question_type": "General",
+    "run": 3,
+    "relevance": 6,
+    "content_depth": 4,
+    "clarity_structure": 3,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair04",
+    "question_type": "General",
+    "run": 4,
+    "relevance": 4,
+    "content_depth": 6,
+    "clarity_structure": 7,
+    "confidence_delivery": 3
+  },
+  {
+    "pair_id": "pair04",
+    "question_type": "General",
+    "run": 5,
+    "relevance": 6,
+    "content_depth": 4,
+    "clarity_structure": 7,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair05",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 8,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair05",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 7,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair05",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair05",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 7,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair05",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 7,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair06",
+    "question_type": "Situational",
+    "run": 1,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 6
+  },
+  {
+    "pair_id": "pair06",
+    "question_type": "Situational",
+    "run": 2,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 9,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair06",
+    "question_type": "Situational",
+    "run": 3,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 6
+  },
+  {
+    "pair_id": "pair06",
+    "question_type": "Situational",
+    "run": 4,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair06",
+    "question_type": "Situational",
+    "run": 5,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 6
+  },
+  {
+    "pair_id": "pair07",
+    "question_type": "Motivational",
+    "run": 1,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 6
+  },
+  {
+    "pair_id": "pair07",
+    "question_type": "Motivational",
+    "run": 2,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair07",
+    "question_type": "Motivational",
+    "run": 3,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair07",
+    "question_type": "Motivational",
+    "run": 4,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair07",
+    "question_type": "Motivational",
+    "run": 5,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair08",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair08",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair08",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 7,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair08",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair08",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 8,
+    "content_depth": 9,
+    "clarity_structure": 9,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair09",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 8,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair09",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 7,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair09",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair09",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair09",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 8,
+    "confidence_delivery": 9
+  },
+  {
+    "pair_id": "pair10",
+    "question_type": "Situational",
+    "run": 1,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair10",
+    "question_type": "Situational",
+    "run": 2,
+    "relevance": 9,
+    "content_depth": 8,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair10",
+    "question_type": "Situational",
+    "run": 3,
+    "relevance": 8,
+    "content_depth": 6,
+    "clarity_structure": 9,
+    "confidence_delivery": 7
+  },
+  {
+    "pair_id": "pair10",
+    "question_type": "Situational",
+    "run": 4,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair10",
+    "question_type": "Situational",
+    "run": 5,
+    "relevance": 8,
+    "content_depth": 7,
+    "clarity_structure": 9,
+    "confidence_delivery": 8
+  },
+  {
+    "pair_id": "pair11",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 6,
+    "content_depth": 2,
+    "clarity_structure": 4,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair11",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 3,
+    "content_depth": 2,
+    "clarity_structure": 4,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair11",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 6,
+    "content_depth": 2,
+    "clarity_structure": 3,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair11",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 3,
+    "content_depth": 2,
+    "clarity_structure": 2,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair11",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 6,
+    "content_depth": 2,
+    "clarity_structure": 2,
+    "confidence_delivery": 3
+  },
+  {
+    "pair_id": "pair12",
+    "question_type": "Motivational",
+    "run": 1,
+    "relevance": 3,
+    "content_depth": 2,
+    "clarity_structure": 4,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair12",
+    "question_type": "Motivational",
+    "run": 2,
+    "relevance": 3,
+    "content_depth": 2,
+    "clarity_structure": 6,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair12",
+    "question_type": "Motivational",
+    "run": 3,
+    "relevance": 4,
+    "content_depth": 2,
+    "clarity_structure": 6,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair12",
+    "question_type": "Motivational",
+    "run": 4,
+    "relevance": 3,
+    "content_depth": 2,
+    "clarity_structure": 4,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair12",
+    "question_type": "Motivational",
+    "run": 5,
+    "relevance": 4,
+    "content_depth": 2,
+    "clarity_structure": 6,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair13",
+    "question_type": "Situational",
+    "run": 1,
+    "relevance": 4,
+    "content_depth": 2,
+    "clarity_structure": 6,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair13",
+    "question_type": "Situational",
+    "run": 2,
+    "relevance": 4,
+    "content_depth": 2,
+    "clarity_structure": 6,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair13",
+    "question_type": "Situational",
+    "run": 3,
+    "relevance": 3,
+    "content_depth": 4,
+    "clarity_structure": 5,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair13",
+    "question_type": "Situational",
+    "run": 4,
+    "relevance": 6,
+    "content_depth": 4,
+    "clarity_structure": 7,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair13",
+    "question_type": "Situational",
+    "run": 5,
+    "relevance": 4,
+    "content_depth": 2,
+    "clarity_structure": 5,
+    "confidence_delivery": 3
+  },
+  {
+    "pair_id": "pair14",
+    "question_type": "Behavioural",
+    "run": 1,
+    "relevance": 2,
+    "content_depth": 1,
+    "clarity_structure": 4,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair14",
+    "question_type": "Behavioural",
+    "run": 2,
+    "relevance": 2,
+    "content_depth": 1,
+    "clarity_structure": 3,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair14",
+    "question_type": "Behavioural",
+    "run": 3,
+    "relevance": 4,
+    "content_depth": 2,
+    "clarity_structure": 3,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair14",
+    "question_type": "Behavioural",
+    "run": 4,
+    "relevance": 2,
+    "content_depth": 4,
+    "clarity_structure": 3,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair14",
+    "question_type": "Behavioural",
+    "run": 5,
+    "relevance": 2,
+    "content_depth": 3,
+    "clarity_structure": 4,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair15",
+    "question_type": "General",
+    "run": 1,
+    "relevance": 6,
+    "content_depth": 3,
+    "clarity_structure": 7,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair15",
+    "question_type": "General",
+    "run": 2,
+    "relevance": 2,
+    "content_depth": 3,
+    "clarity_structure": 5,
+    "confidence_delivery": 1
+  },
+  {
+    "pair_id": "pair15",
+    "question_type": "General",
+    "run": 3,
+    "relevance": 4,
+    "content_depth": 3,
+    "clarity_structure": 7,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair15",
+    "question_type": "General",
+    "run": 4,
+    "relevance": 6,
+    "content_depth": 3,
+    "clarity_structure": 7,
+    "confidence_delivery": 2
+  },
+  {
+    "pair_id": "pair15",
+    "question_type": "General",
+    "run": 5,
+    "relevance": 2,
+    "content_depth": 4,
+    "clarity_structure": 6,
+    "confidence_delivery": 1
+  }
+]

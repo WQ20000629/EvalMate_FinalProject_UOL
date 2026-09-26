@@ -1,0 +1,61 @@
+Job Description
+
+Develop web application prototypes, new technologies and products.
+
+Build highly responsive and scalable web applications.
+
+Build fully functional web applications with interfaces to backend database, writing clean and maintainable code.
+
+Build fully functional, clear, testable backend RESTful/SOAP APIs with interfaces to backend database.
+
+Resolve defects, and generally ensure accuracy, integrity, interoperability and completeness of system.
+
+Build regularly automated tasks to perform functions specific to the project requirements.
+
+Build interfaces to exchange data between various third-party systems.
+
+Resolve defects, and generally ensure accuracy, integrity, inter-operability and completeness of system.
+
+Troubleshoot and debug to optimize performance.
+
+Prepare and deliver software related documentation.
+
+Provide timely updates to the web and backend application.
+
+Provide support and maintenance of existing software web application projects.
+
+Respond to users in a timely manner.
+
+Work with fellow software engineers to coordinate the development effort and ensure overall consistency in the coding and the interfacing between various components and sub-systems in order to achieve a full functioning solution.
+
+Work with consultants to craft user stories, assess feasibility and build demonstration showcases.
+
+Work with consultants and senior engineers to develop test scenarios to ensure full functionality of system before user acceptance test.
+
+Work with customers and partners, both internal and external where there will be collaboration for knowledge transfer.
+
+
+
+Essential Skills and Experience
+
+At least a Diploma, Advanced/Higher/Graduate Diploma, Bachelor's Degree, Post Graduate Diploma or Professional Degree in Engineering (Computer/Telecommunication), Computer Science/Information Technology or equivalent.
+
+Entry Level or up to 2 years of relevant working experience.
+
+Tech Stack Requirements: ASP.NET Framework 4.5 or .NET Core, C#, HTML, CSS, Javascript, SQL Server.
+
+Good problem solving, logical reasoning, planning and time management skills.
+
+Effective communication and technical writing skills.
+
+Strong interest in software engineering.
+
+Willingness to learn on the job, and constantly eager to learn new skills on one’s own.
+
+Ability to work well in teams and also independently in a fast-paced environment.
+
+Familiarity with mobile application development (with Xamarin) is a plus.
+
+Familiarity with backend API development (with .NET technologies) is a plus.
+
+Domain knowledge in accounting, or procurement, or inventory management, or leasing, or computerized maintenance management, or billing, or resource booking, or Enterprise Resource Planning is a plus.

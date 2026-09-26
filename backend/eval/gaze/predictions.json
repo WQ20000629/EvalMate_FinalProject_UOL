@@ -1,0 +1,5912 @@
+[
+  {
+    "frame_file": "frame_0000.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0001.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0002.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0003.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0004.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0005.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0006.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0007.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0008.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0009.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0010.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0011.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0012.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0013.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0014.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0015.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0016.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0017.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0018.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0019.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0020.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0021.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0022.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0023.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0024.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0025.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0026.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0027.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0028.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0029.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0030.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0031.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0032.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0033.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0034.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0035.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0036.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0037.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0038.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0039.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0040.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0041.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0042.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0043.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0044.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0045.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0046.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0047.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0048.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0049.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0050.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0051.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0052.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0053.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0054.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0055.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0056.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0057.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0058.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0059.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0060.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0061.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0062.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0063.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0064.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0065.jpg",
+    "condition": "camera_1",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0066.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0067.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0068.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0069.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0070.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0071.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0072.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0073.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0074.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0075.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0076.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0077.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0078.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0079.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0080.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0081.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0082.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0083.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0084.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0085.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0086.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0087.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0088.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0089.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0090.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0091.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0092.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0093.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0094.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0095.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0096.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0097.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0098.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0099.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0100.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0101.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0102.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0103.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0104.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0105.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0106.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0107.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0108.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0109.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0110.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0111.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0112.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0113.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0114.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0115.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0116.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0117.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0118.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0119.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0120.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0121.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0122.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0123.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0124.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0125.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0126.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0127.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0128.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0129.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0130.jpg",
+    "condition": "down",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0131.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0132.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0133.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0134.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0135.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0136.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0137.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0138.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0139.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0140.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0141.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0142.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0143.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0144.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0145.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0146.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0147.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0148.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0149.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0150.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0151.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0152.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0153.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0154.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0155.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0156.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0157.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0158.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0159.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0160.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0161.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0162.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0163.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0164.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0165.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0166.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0167.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0168.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0169.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0170.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0171.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0172.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0173.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0174.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0175.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0176.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0177.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0178.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0179.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0180.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0181.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0182.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0183.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0184.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0185.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0186.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0187.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0188.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0189.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0190.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0191.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0192.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0193.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0194.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0195.jpg",
+    "condition": "camera_2",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0196.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0197.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0198.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0199.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0200.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0201.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0202.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0203.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0204.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0205.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0206.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0207.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0208.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0209.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0210.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0211.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0212.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0213.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0214.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0215.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0216.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0217.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0218.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0219.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0220.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0221.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0222.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0223.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0224.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0225.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0226.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0227.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0228.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0229.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0230.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0231.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0232.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0233.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0234.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0235.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0236.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0237.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0238.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0239.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0240.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0241.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0242.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0243.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0244.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0245.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0246.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0247.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0248.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0249.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0250.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0251.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0252.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0253.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0254.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0255.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0256.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0257.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0258.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0259.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0260.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0261.jpg",
+    "condition": "side",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0262.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0263.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0264.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0265.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0266.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0267.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0268.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0269.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0270.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0271.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0272.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0273.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0274.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0275.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0276.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0277.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0278.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0279.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0280.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0281.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0282.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0283.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0284.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0285.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0286.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0287.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0288.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0289.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0290.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0291.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0292.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0293.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0294.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0295.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0296.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0297.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0298.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0299.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0300.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0301.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0302.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0303.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0304.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0305.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0306.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0307.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0308.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0309.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0310.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0311.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0312.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0313.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0314.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0315.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0316.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0317.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0318.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0319.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0320.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0321.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0322.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0323.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0324.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0325.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0326.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0327.jpg",
+    "condition": "camera_3",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0328.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0329.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0330.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0331.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0332.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0333.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0334.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0335.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0336.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0337.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0338.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0339.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0340.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0341.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0342.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0343.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0344.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0345.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0346.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0347.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0348.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0349.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0350.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0351.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0352.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0353.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0354.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0355.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0356.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0357.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0358.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0359.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0360.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0361.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0362.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0363.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0364.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0365.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0366.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0367.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0368.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0369.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0370.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0371.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0372.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": false,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0373.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0374.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0375.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0376.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0377.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0378.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0379.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0380.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0381.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0382.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0383.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0384.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0385.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0386.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0387.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0388.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0389.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0390.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0391.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0392.jpg",
+    "condition": "eyes_closed",
+    "expected_label": "OFF",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0393.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0394.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0395.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0396.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0397.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0398.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0399.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0400.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0401.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0402.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0403.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0404.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0405.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0406.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0407.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0408.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0409.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0410.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0411.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0412.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0413.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0414.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0415.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0416.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0417.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0418.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0419.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0420.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0421.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0422.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0423.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0424.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0425.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0426.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0427.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0428.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0429.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0430.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0431.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0432.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0433.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0434.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0435.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0436.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0437.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0438.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0439.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0440.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0441.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0442.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0443.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0444.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0445.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0446.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0447.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0448.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0449.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0450.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0451.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0452.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0453.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0454.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0455.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0456.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0457.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0458.jpg",
+    "condition": "camera_4",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0459.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0460.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0461.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0462.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0463.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0464.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0465.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0466.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0467.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0468.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0469.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0470.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0471.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0472.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0473.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0474.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0475.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0476.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0477.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0478.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0479.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0480.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0481.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0482.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0483.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0484.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0485.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0486.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0487.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0488.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0489.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0490.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0491.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0492.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0493.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0494.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0495.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0496.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0497.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0498.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0499.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0500.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0501.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0502.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0503.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0504.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0505.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0506.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0507.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0508.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0509.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0510.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0511.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0512.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0513.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0514.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0515.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0516.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0517.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0518.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0519.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0520.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0521.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0522.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0523.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0524.jpg",
+    "condition": "extreme_angle",
+    "expected_label": "OFF",
+    "face_detected": false,
+    "landmark_count": 0,
+    "predicted_looking": false,
+    "expected_looking": false,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0525.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0526.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0527.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0528.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0529.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0530.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0531.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0532.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0533.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0534.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0535.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0536.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0537.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0538.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0539.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0540.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0541.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0542.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0543.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0544.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0545.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0546.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0547.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0548.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0549.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0550.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0551.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0552.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0553.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0554.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0555.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0556.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0557.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0558.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0559.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0560.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0561.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0562.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0563.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0564.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0565.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0566.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0567.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0568.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0569.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0570.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0571.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0572.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0573.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0574.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0575.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0576.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0577.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0578.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0579.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0580.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0581.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0582.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0583.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0584.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0585.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0586.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0587.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": false,
+    "expected_looking": true,
+    "correct": false
+  },
+  {
+    "frame_file": "frame_0588.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0589.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  },
+  {
+    "frame_file": "frame_0590.jpg",
+    "condition": "camera_5",
+    "expected_label": "ON",
+    "face_detected": true,
+    "landmark_count": 478,
+    "predicted_looking": true,
+    "expected_looking": true,
+    "correct": true
+  }
+]

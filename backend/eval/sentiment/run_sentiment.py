@@ -1,29 +1,33 @@
-"""
-Runs every transcript in texts.csv through the app's SentimentAnalyzer and
-writes the predictions to results.json for compute_metrics.py to score.
+# ------------------------------------------------------------------
+# File: backend/eval/sentiment/run_sentiment.py
+# Purpose: Runs sentiment analysis on test transcripts and saves predictions.
+# ------------------------------------------------------------------
 
-Usage:
-    python run_sentiment.py
-"""
+"""Run the sentiment model across all texts and save the predictions for scoring."""
+# Standard modules load the text dataset and save predictions.
 import csv
 import json
 import os
 import sys
 
+# Import the same sentiment model used by the application.
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 from app.models.sentiment_analyzer import SentimentAnalyzer
 
+# Paths to the files this script reads and writes
 HERE = os.path.dirname(__file__)
 TEXTS_CSV = os.path.join(HERE, "texts.csv")
 RESULTS_JSON = os.path.join(HERE, "results.json")
 
 
 def load_rows():
+    """Load the transcripts and their human sentiment labels."""
     with open(TEXTS_CSV, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
 def main():
+    """Run sentiment analysis on every non-empty transcript."""
     rows = load_rows()
     if not rows:
         print("No rows found in texts.csv. Nothing to analyze.")
@@ -32,6 +36,7 @@ def main():
     print("Loading sentiment model...")
     analyzer = SentimentAnalyzer()
 
+    # Store the human label and model prediction for each transcript.
     results = []
     for row in rows:
         text_id = row["text_id"]
@@ -41,6 +46,7 @@ def main():
             print(f"  [SKIP] {text_id}: transcript is empty")
             continue
 
+        # Analyse the transcript with the application sentiment model.
         outcome = analyzer.analyze(transcript)
         results.append({
             "text_id": text_id,
@@ -51,6 +57,7 @@ def main():
         print(f"  {text_id}: predicted={outcome['label']} ({outcome['confidence']}) "
               f"human={row['human_sentiment']}")
 
+    # Save predictions for compute_metrics.py and plot_confusion_matrix.py.
     with open(RESULTS_JSON, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
 
